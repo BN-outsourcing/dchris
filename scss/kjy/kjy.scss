@@ -1,0 +1,198 @@
+._header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    box-sizing: border-box;
+    padding: 22px 28px;
+    .logo {
+        width: 85px;
+    }
+}
+
+._main {
+
+    .section01 {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        video {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .lang {
+            font-family: 'Outfit';
+            font-weight: 400;
+            position: absolute;
+            right: calc(472/1920*100%);
+            bottom: calc(188/979*100%);
+            font-size: 18px;
+            letter-spacing: -0.045em;
+            line-height: calc(21/18);
+            color: #24ff00;
+        }
+
+        .kr {
+            left: calc(668/1920*100%);
+        }
+
+        .en {
+            right: calc(668/1920*100%);
+        }
+
+        .select {
+            mix-blend-mode: difference;
+            position: absolute;
+            font-weight: bold;
+            letter-spacing: -0.025em;
+            color: #ffffff;
+            font-size: 60px;
+            padding-bottom: 11px;
+            top: calc(440/979*100%);
+            text-transform: uppercase;
+            font-family: 'Perpetua Titling MT';
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 4px;
+                width: 100%;
+                background: #fff;
+            }
+        }
+
+    }
+
+    .section02 {
+        
+        position: relative;
+        z-index: 3;
+
+        .img {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100%;
+            img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 0;
+
+                &.img03 {
+                    opacity: 1;
+                }
+
+            }
+        }
+
+        .section02-one,
+        .section02-two {
+            height: 100vh;
+            position: relative;
+        }
+
+        .section02-one {
+            box-sizing: border-box;
+
+            .im-box {
+                position: absolute;
+                top: 155px;
+                left: 188px;
+
+                .bb {
+                    width: 194px;
+                    height: 272px;
+                    background: #acf;
+                }
+                .tbx {
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-top: 15px;
+                    color: #00ff42;
+                    font-size: 17px;
+                    letter-spacing: -0.045em;
+                    font-family: 'Outfit';
+                    font-weight: 400;
+                }
+            }
+
+            .scroll-box {
+                position: absolute;
+                top: 162px;
+                right: 54px;
+                display: flex;
+                align-items: center;
+                gap: 18px;
+                p {
+                    font-size: 17px;
+                    font-family: 'Outfit';
+                    letter-spacing: -0.045em;
+                    color: #00ff42;
+                }
+                .scroll {
+                    width: 21.04px;
+                    height: 38.26px;
+                    border-radius: 100px;
+                    box-sizing: border-box;
+                    border: 1px solid #30ff00;
+                    position: relative;
+                    .cir {
+                        width: 4px;
+                        height: 4px;
+                        background: #2aff00;
+                        position: absolute;
+                        border-radius: 1000px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        bottom: 11px;
+                    }
+                }
+            }
+
+            .bt {
+                position: absolute;
+                font-family: 'Perpetua Titling MT';
+                color: #ffffff;
+                font-weight: bold;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: calc(48/980*100%);
+                font-size: 373.16px;
+                letter-spacing: -0.025em;
+            }
+
+            .p {
+                position: absolute;
+                z-index: 2;
+                bottom: calc(235/980*100%);
+                right: calc(390/1920*100%);
+                color: #00ff42;
+                line-height: calc(23/17);
+                font-size: 17px;
+                font-family: 'Outfit';
+                letter-spacing: -0.045em;
+                nav {
+                    display: flex;
+                    gap: 102px;
+                    margin-top: 15px;
+                }
+            }
+
+        }
+
+    }
+
+}
