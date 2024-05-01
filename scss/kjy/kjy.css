@@ -84,29 +84,29 @@
   -o-object-fit: cover;
      object-fit: cover;
   opacity: 0;
+  z-index: 5;
 }
 ._main .section02 .img img.img03 {
   opacity: 1;
-}
-._main .section02 .section02-one,
-._main .section02 .section02-two {
-  height: 100vh;
-  position: relative;
+  z-index: 2;
 }
 ._main .section02 .section02-one {
   box-sizing: border-box;
 }
-._main .section02 .section02-one .im-box {
-  position: absolute;
-  top: 155px;
-  left: 188px;
+._main .section02 .section02-one .flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-right: 54px;
+  padding-left: 188px;
+  padding-top: 155px;
 }
-._main .section02 .section02-one .im-box .bb {
+._main .section02 .section02-one .flex .im-box .bb {
   width: 194px;
   height: 272px;
   background: #acf;
 }
-._main .section02 .section02-one .im-box .tbx {
+._main .section02 .section02-one .flex .im-box .tbx {
   display: flex;
   justify-content: flex-end;
   margin-top: 15px;
@@ -116,21 +116,19 @@
   font-family: "Outfit";
   font-weight: 400;
 }
-._main .section02 .section02-one .scroll-box {
-  position: absolute;
-  top: 162px;
-  right: 54px;
+._main .section02 .section02-one .flex .scroll-box {
+  margin-top: 7px;
   display: flex;
   align-items: center;
   gap: 18px;
 }
-._main .section02 .section02-one .scroll-box p {
+._main .section02 .section02-one .flex .scroll-box p {
   font-size: 17px;
   font-family: "Outfit";
   letter-spacing: -0.045em;
   color: #00ff42;
 }
-._main .section02 .section02-one .scroll-box .scroll {
+._main .section02 .section02-one .flex .scroll-box .scroll {
   width: 21.04px;
   height: 38.26px;
   border-radius: 100px;
@@ -138,7 +136,7 @@
   border: 1px solid #30ff00;
   position: relative;
 }
-._main .section02 .section02-one .scroll-box .scroll .cir {
+._main .section02 .section02-one .flex .scroll-box .scroll .cir {
   width: 4px;
   height: 4px;
   background: #2aff00;
@@ -148,30 +146,115 @@
   transform: translateX(-50%);
   bottom: 11px;
 }
-._main .section02 .section02-one .bt {
-  position: absolute;
+._main .section02 .section02-one .bbt {
+  margin-top: 156px;
+  text-align: center;
+}
+._main .section02 .section02-one .bbt .inline {
+  display: inline-block;
+  position: relative;
+}
+._main .section02 .section02-one .bbt .inline .bt {
   font-family: "Perpetua Titling MT";
   color: #ffffff;
   font-weight: bold;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 4.8979591837%;
   font-size: 373.16px;
   letter-spacing: -0.025em;
+  mix-blend-mode: difference;
 }
-._main .section02 .section02-one .p {
+._main .section02 .section02-one .bbt .inline .p {
+  text-align: left;
   position: absolute;
   z-index: 2;
-  bottom: 23.9795918367%;
-  right: 20.3125%;
+  top: 0;
+  right: 165px;
   color: #00ff42;
+  mix-blend-mode: difference;
   line-height: 1.3529411765;
   font-size: 17px;
   font-family: "Outfit";
   letter-spacing: -0.045em;
 }
-._main .section02 .section02-one .p nav {
+._main .section02 .section02-one .bbt .inline .p nav {
   display: flex;
   gap: 102px;
-  margin-top: 15px;
+  margin-top: 10px;
+}
+._main .section02 .section02-two {
+  height: 100vh;
+  position: relative;
+}
+._main .section02 .section02-two nav {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(106px, -50%) rotate(-90deg);
+  display: flex;
+}
+._main .section02 .section02-two nav a {
+  height: 33px;
+  width: 122px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 17px;
+  font-family: "Outfit";
+  letter-spacing: -0.045em;
+}
+._main .section02 .section02-two nav a i {
+  font-size: 1.0588235294em;
+}
+._main .section02 .section02-two nav a:first-child {
+  background: #24ff00;
+}
+._main .section02 .section02-two .col {
+  position: absolute;
+}
+._main .section02 .section02-two .col p {
+  text-align: left;
+  font-size: 20px;
+  letter-spacing: -0.045em;
+  font-weight: 500;
+  font-family: "Outfit";
+  color: #fff;
+  margin-left: 3px;
+}
+._main .section02 .section02-two .col .video {
+  width: 377.99px;
+  height: 213px;
+  background: #fff;
+  border-radius: 18px;
+  margin-top: 24px;
+  transform: scale(0.5);
+  transform-origin: top left;
+}
+._main .section02 .section02-two .col:nth-of-type(1) {
+  left: 9.0104166667%;
+  top: 22.4489795918%;
+}
+._main .section02 .section02-two .col:nth-of-type(2) {
+  left: 26.1979166667%;
+  top: 53.2653061224%;
+}
+._main .section02 .section02-two .col:nth-of-type(3) {
+  left: 7.8125%;
+  top: 62.0408163265%;
+}
+._main .section02 .section02-two .col:nth-of-type(4) {
+  left: 32.7083333333%;
+  top: 76.9387755102%;
+}
+._main .section02 .section02-two .col:nth-of-type(5) {
+  right: 18.9583333333%;
+  top: 13.0612244898%;
+}
+._main .section02 .section02-two .col:nth-of-type(6) {
+  right: 11.71875%;
+  top: 39.5918367347%;
+}
+._main .section02 .section02-two .col:nth-of-type(7) {
+  right: 23.4375%;
+  top: 67.3469387755%;
 }/*# sourceMappingURL=kjy.css.map */
