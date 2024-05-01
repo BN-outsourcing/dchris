@@ -8,7 +8,7 @@
         <main class="_main">
             <section class="section01">
                 <video 
-                    src="/asset/video/인트로 영상pc.mp4" 
+                    src="/asset/video/pc.mp4" 
                     autoplay 
                     muted 
                     playsinline 
