@@ -6,192 +6,85 @@
   z-index: 9999;
   box-sizing: border-box;
   padding: 22px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 ._header .logo {
   width: 85px;
 }
-
-._main .section01 {
-  height: 100vh;
-  width: 100%;
-  position: relative;
+._header .gnb {
+  color: #fff;
+  display: flex;
 }
-._main .section01 video {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-._main .section01 .lang {
-  font-family: "Outfit";
-  font-weight: 400;
-  position: absolute;
-  right: 24.5833333333%;
-  bottom: 19.2032686415%;
-  font-size: 18px;
+._header .gnb p {
+  font-size: 20px;
   letter-spacing: -0.045em;
-  line-height: 1.1666666667;
-  color: #24ff00;
+  font-family: "Outfit";
 }
-._main .section01 .kr {
-  left: 34.7916666667%;
+._header .gnb .menu {
+  position: relative;
+  width: 35px;
+  height: 18px;
+  margin-left: 25px;
 }
-._main .section01 .en {
-  right: 34.7916666667%;
-}
-._main .section01 .select {
-  mix-blend-mode: difference;
-  position: absolute;
-  font-weight: bold;
-  letter-spacing: -0.025em;
-  color: #ffffff;
-  font-size: 60px;
-  padding-bottom: 11px;
-  top: 44.9438202247%;
-  text-transform: uppercase;
-  font-family: "Perpetua Titling MT";
-}
-._main .section01 .select::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 4px;
+._header .gnb .menu div {
+  height: 3px;
   width: 100%;
   background: #fff;
-}
-._main .section02 {
-  position: relative;
-  z-index: 3;
-}
-._main .section02 .img {
   position: absolute;
-  z-index: -1;
+}
+._header .gnb .menu div:nth-of-type(1) {
   top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
 }
-._main .section02 .img img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  opacity: 0;
-  z-index: 5;
+._header .gnb .menu div:nth-of-type(2) {
+  top: 100%;
+  transform: translateY(-100%);
 }
-._main .section02 .img img.img03 {
-  opacity: 1;
-  z-index: 2;
+._header.black .logo {
+  filter: invert(1);
 }
-._main .section02 .section02-one {
-  box-sizing: border-box;
+._header.black .gnb {
+  color: #000;
 }
-._main .section02 .section02-one .flex {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding-right: 54px;
-  padding-left: 188px;
-  padding-top: 155px;
+._header.black .gnb .menu div {
+  background: #000;
 }
-._main .section02 .section02-one .flex .im-box .bb {
-  width: 194px;
-  height: 272px;
-  background: #acf;
+@media screen and (min-width: 821px) {
+  ._header .gnb {
+    display: none;
+  }
 }
-._main .section02 .section02-one .flex .im-box .tbx {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 15px;
-  color: #00ff42;
-  font-size: 17px;
-  letter-spacing: -0.045em;
-  font-family: "Outfit";
-  font-weight: 400;
+@media screen and (max-width: 820px) {
+  ._header {
+    padding: 34px 4.6341463415% 21px 2.5609756098%;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  ._header .logo {
+    width: 94px;
+  }
+  ._header .gnb {
+    display: flex;
+  }
 }
-._main .section02 .section02-one .flex .scroll-box {
-  margin-top: 7px;
-  display: flex;
-  align-items: center;
-  gap: 18px;
+@media screen and (max-width: 480px) {
+  ._header .gnb p {
+    font-size: 16px;
+  }
+  ._header .gnb .menu {
+    margin-left: 15px;
+  }
 }
-._main .section02 .section02-one .flex .scroll-box p {
-  font-size: 17px;
-  font-family: "Outfit";
-  letter-spacing: -0.045em;
-  color: #00ff42;
-}
-._main .section02 .section02-one .flex .scroll-box .scroll {
-  width: 21.04px;
-  height: 38.26px;
-  border-radius: 100px;
-  box-sizing: border-box;
-  border: 1px solid #30ff00;
-  position: relative;
-}
-._main .section02 .section02-one .flex .scroll-box .scroll .cir {
-  width: 4px;
-  height: 4px;
-  background: #2aff00;
-  position: absolute;
-  border-radius: 1000px;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 11px;
-}
-._main .section02 .section02-one .bbt {
-  margin-top: 156px;
-  text-align: center;
-}
-._main .section02 .section02-one .bbt .inline {
-  display: inline-block;
-  position: relative;
-}
-._main .section02 .section02-one .bbt .inline .bt {
-  font-family: "Perpetua Titling MT";
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 373.16px;
-  letter-spacing: -0.025em;
-  mix-blend-mode: difference;
-}
-._main .section02 .section02-one .bbt .inline .p {
-  text-align: left;
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  right: 165px;
-  color: #00ff42;
-  mix-blend-mode: difference;
-  line-height: 1.3529411765;
-  font-size: 17px;
-  font-family: "Outfit";
-  letter-spacing: -0.045em;
-}
-._main .section02 .section02-one .bbt .inline .p nav {
-  display: flex;
-  gap: 102px;
-  margin-top: 10px;
-}
-._main .section02 .section02-two {
-  height: 100vh;
-  position: relative;
-}
-._main .section02 .section02-two nav {
-  position: absolute;
+
+.fix_nav {
+  position: fixed;
   right: 0;
   top: 50%;
   transform: translate(106px, -50%) rotate(-90deg);
   display: flex;
+  z-index: 999;
 }
-._main .section02 .section02-two nav a {
+.fix_nav a {
   height: 33px;
   width: 122px;
   background: #fff;
@@ -203,58 +96,479 @@
   font-family: "Outfit";
   letter-spacing: -0.045em;
 }
-._main .section02 .section02-two nav a i {
+.fix_nav a i {
   font-size: 1.0588235294em;
 }
-._main .section02 .section02-two nav a:first-child {
+.fix_nav a:first-child {
   background: #24ff00;
 }
-._main .section02 .section02-two .col {
+@media screen and (max-width: 820px) {
+  .fix_nav {
+    display: none;
+  }
+}
+
+.list-view {
+  background: #fff;
+  padding-top: 98px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  display: none;
+}
+.list-view .scroll {
+  display: flex;
+  font-size: 18px;
+  letter-spacing: -0.045em;
+  color: #ffffff;
+  position: absolute;
+  top: 100%;
+  right: 6.7073170732vw;
+  margin-top: 6.7073170732vw;
+  font-family: "Outfit";
+}
+.list-view .over {
+  max-height: 55vh;
+  padding-bottom: 45px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+.list-view .over .small {
+  padding: 34px 5.243902439% 40px;
+  font-family: "Outfit";
+  font-size: 20px;
+  letter-spacing: -0.045em;
+  line-height: 1.15;
+  word-break: keep-all;
+}
+.list-view .over .list li + li {
+  margin-top: 40px;
+}
+.list-view .over .list li .img {
+  position: relative;
+}
+.list-view .over .list li .img img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.list-view .over .list li .img::after {
+  content: "";
+  display: block;
+  padding-bottom: 50.6329113924%;
+}
+.list-view .over .list li .tbx {
+  font-size: 20px;
+  letter-spacing: -0.045em;
+  font-weight: 500;
+  padding: 0 5.243902439%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 11px;
+}
+.list-view .over .list li .tbx a {
+  background: #000000;
+  color: #fff;
+  padding: 0.5em 1.5em;
+}
+@media screen and (max-width: 480px) {
+  .list-view .scroll {
+    font-size: 14px;
+    margin-top: 25px;
+    right: 5%;
+  }
+  .list-view .over .small {
+    font-size: 16px;
+  }
+  .list-view .over .list li .tbx {
+    font-size: 16px;
+  }
+}
+
+._main .intro {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+._main .intro video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+._main .intro .lang {
+  font-family: "Outfit";
+  font-weight: 400;
+  position: absolute;
+  right: 24.5833333333%;
+  bottom: 19.2032686415%;
+  font-size: 18px;
+  letter-spacing: -0.045em;
+  line-height: 1.1666666667;
+  color: #24ff00;
+}
+._main .intro .kr {
+  left: 34.7916666667%;
+}
+._main .intro .en {
+  right: 34.7916666667%;
+}
+._main .intro .select {
+  mix-blend-mode: difference;
+  position: absolute;
+  font-weight: bold;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+  font-size: 60px;
+  padding-bottom: 11px;
+  top: 44.9438202247%;
+  text-transform: uppercase;
+  font-family: "Perpetua Titling MT";
+}
+._main .intro .select::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background: #fff;
+  transform: scaleX(0);
+  transform-origin: 100% 0;
+  transition: transform 0.5s;
+}
+._main .intro .select:hover::after {
+  transform: scaleX(100%);
+  transform-origin: 0 0;
+}
+@media screen and (max-width: 1024px) {
+  ._main .intro .kr {
+    left: 24%;
+  }
+  ._main .intro .en {
+    right: 24%;
+  }
+  ._main .intro .lang {
+    right: 14.583333%;
+  }
+  ._main .intro .select {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 820px) {
+  ._main .intro .lang {
+    display: none;
+  }
+  ._main .intro .sel-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 21.3414634146vw;
+    mix-blend-mode: difference;
+  }
+  ._main .intro .select {
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    text-align: center;
+    font-size: 15.487804878vw;
+  }
+}
+._main .desktop .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+}
+._main .desktop .background-image img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0;
+  z-index: 5;
+}
+._main .desktop .background-image img.img03 {
+  opacity: 1;
+  z-index: 2;
+}
+._main .desktop .section01 {
+  position: relative;
+  box-sizing: border-box;
+  height: 100vh;
+  z-index: 3;
+}
+._main .desktop .section01 .im-box {
+  position: absolute;
+  top: 155px;
+  left: 9.7916666667%;
+}
+._main .desktop .section01 .im-box .bb {
+  width: 194px;
+  height: 272px;
+  background: url(/asset/image/main/dchris.jpg) no-repeat center/cover;
+}
+._main .desktop .section01 .im-box .tbx {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 15px;
+  color: #00ff42;
+  font-size: 17px;
+  letter-spacing: -0.045em;
+  font-family: "Outfit";
+  font-weight: 400;
+}
+._main .desktop .section01 .im-box .tbx .line {
+  width: 71px;
+  height: 1px;
+  background: #00ff42;
+  margin-left: 13px;
+  position: relative;
+}
+._main .desktop .section01 .im-box .tbx .line .arr {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+._main .desktop .section01 .scroll-box {
+  position: absolute;
+  right: 2.8125%;
+  top: 162px;
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+._main .desktop .section01 .scroll-box p {
+  font-size: 17px;
+  font-family: "Outfit";
+  letter-spacing: -0.045em;
+  color: #00ff42;
+}
+._main .desktop .section01 .scroll-box .scroll {
+  width: 21.04px;
+  height: 38.26px;
+  border-radius: 100px;
+  box-sizing: border-box;
+  border: 1px solid #30ff00;
+  position: relative;
+}
+._main .desktop .section01 .scroll-box .scroll .cir {
+  width: 4px;
+  height: 4px;
+  background: #2aff00;
+  position: absolute;
+  border-radius: 1000px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 11px;
+}
+._main .desktop .section01 .inline {
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
   position: absolute;
 }
-._main .section02 .section02-two .col p {
+._main .desktop .section01 .inline .bt {
+  font-family: "Perpetua Titling MT";
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 19.4354166667vw;
+  letter-spacing: -0.025em;
+  mix-blend-mode: difference;
+}
+._main .desktop .section01 .inline .p {
+  text-align: left;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 11.2092391304%;
+  color: #00ff42;
+  mix-blend-mode: difference;
+  line-height: 1.3529411765;
+  font-size: 17px;
+  font-family: "Outfit";
+  letter-spacing: -0.045em;
+}
+._main .desktop .section01 .inline .p nav {
+  display: flex;
+  gap: 102px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 1280px) {
+  ._main .desktop .section01 .im-box {
+    left: 4.5%;
+  }
+  ._main .desktop .section01 .im-box .bb {
+    width: 154px;
+    height: 232px;
+  }
+  ._main .desktop .section01 .im-box .tbx .line {
+    width: 51px;
+  }
+  ._main .desktop .section01 .inline .p {
+    font-size: 15px;
+    transform: translateY(-25%);
+    right: 2.5%;
+  }
+}
+._main .desktop .section02 {
+  height: 100vh;
+  position: relative;
+  z-index: 3;
+}
+._main .desktop .section02 .col {
+  position: absolute;
+}
+._main .desktop .section02 .col p {
   text-align: left;
   font-size: 20px;
   letter-spacing: -0.045em;
   font-weight: 500;
   font-family: "Outfit";
   color: #fff;
-  margin-left: 3px;
+  margin-left: 5px;
 }
-._main .section02 .section02-two .col .video {
-  width: 377.99px;
+._main .desktop .section02 .col .video {
+  /* width: 377.99px;
   height: 213px;
-  background: #fff;
+  background: #fff; */
+  width: 8.8541666667vw;
+  height: 6.1458333333vw;
   border-radius: 18px;
-  margin-top: 24px;
-  transform: scale(0.5);
-  transform-origin: top left;
+  margin-top: 12px;
+  position: relative;
+  overflow: hidden;
 }
-._main .section02 .section02-two .col:nth-of-type(1) {
+._main .desktop .section02 .col .video iframe, ._main .desktop .section02 .col .video video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+._main .desktop .section02 .col:nth-of-type(1) {
   left: 9.0104166667%;
   top: 22.4489795918%;
 }
-._main .section02 .section02-two .col:nth-of-type(2) {
+._main .desktop .section02 .col:nth-of-type(2) {
   left: 26.1979166667%;
   top: 53.2653061224%;
 }
-._main .section02 .section02-two .col:nth-of-type(3) {
+._main .desktop .section02 .col:nth-of-type(3) {
   left: 7.8125%;
   top: 62.0408163265%;
 }
-._main .section02 .section02-two .col:nth-of-type(4) {
+._main .desktop .section02 .col:nth-of-type(4) {
   left: 32.7083333333%;
   top: 76.9387755102%;
 }
-._main .section02 .section02-two .col:nth-of-type(5) {
-  right: 18.9583333333%;
+._main .desktop .section02 .col:nth-of-type(5) {
+  left: 72.2916666667%;
   top: 13.0612244898%;
 }
-._main .section02 .section02-two .col:nth-of-type(6) {
+._main .desktop .section02 .col:nth-of-type(6) {
   right: 11.71875%;
   top: 39.5918367347%;
 }
-._main .section02 .section02-two .col:nth-of-type(7) {
+._main .desktop .section02 .col:nth-of-type(7) {
   right: 23.4375%;
   top: 67.3469387755%;
+}
+@media screen and (min-width: 821px) {
+  ._main .desktop {
+    display: block;
+  }
+}
+@media screen and (max-width: 820px) {
+  ._main .desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 821px) {
+  ._main .mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 820px) {
+  ._main .mobile {
+    display: block;
+  }
+}
+._main .mobile .background-image {
+  height: 100vh;
+  position: relative;
+}
+._main .mobile .background-image .center {
+  opacity: 1;
+}
+._main .mobile .background-image img {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+._main .mobile .m_nav {
+  position: absolute;
+  bottom: 11.2195121951vw;
+  left: 0;
+  width: 100%;
+  padding: 0 6.2195121951% 0 6.4634146341%;
+  box-sizing: border-box;
+  gap: 0.71875em;
+  display: flex;
+  flex-direction: column;
+  font-size: 3.9024390244vw;
+}
+._main .mobile .m_nav a {
+  height: 2.9059375em;
+  width: 100%;
+  border: 1px solid #fff;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  font-family: "Outfit";
+  letter-spacing: -0.045em;
+  color: #fff;
+  gap: 0.6875em;
+  cursor: pointer;
+}
+._main .mobile .m_nav a:nth-of-type(2) {
+  background: #18ff00;
+  color: #000;
+  border-color: #18ff00;
+}
+@media screen and (max-width: 480px) {
+  ._main .mobile .m_nav a {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=kjy.css.map */
