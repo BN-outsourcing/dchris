@@ -19,26 +19,20 @@
                     <a href="/eng" class="en select">EN</a>
                 </div>
 
-                <p class="lang">
-                    Welcome to DCHRIS<br/>
-                    Please select a language.<br/>
-                    KR or EN
-                </p>
+                <div class="lang">
+                    <p>
+                        Welcome to DCHRIS<br/>
+                        Please select a language.<br/>
+                        KR or EN
+                    </p>
+                </div>
 
             </section>
         </main>
     </div>
 </div>
 
-<script>
-    
-    gsap.registerPlugin(ScrollTrigger,ScrollSmoother);
-    
-    ScrollSmoother.create({
-        smooth: 1,
-    });
-
-</script>
+<script type="module" src="/js/kjy/main/intro.js"></script>
 
 <?php 
     include_once $_SERVER["DOCUMENT_ROOT"]."/_end.php"

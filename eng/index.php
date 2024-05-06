@@ -1,7 +1,12 @@
 <?php 
+    $lang = 'en';
     include_once $_SERVER["DOCUMENT_ROOT"]."/_head.php";
     include_once $_SERVER["DOCUMENT_ROOT"]."/components/layout/_header.html";
 ?>
+
+<div class="over-fix">
+    D-BLACK PROJECT
+</div>
 
 <nav class="fix_nav">
     <a href=""><i class="xi-whatsapp"></i> Whats app</a>
@@ -25,16 +30,16 @@
                     <img src="/asset/image/main/list_view.jpg" alt="">
                 </div>
                 <div class="tbx">
-                    <p>① 디크리스</p>
+                    <p>① DCHRIS</p>
                     <a href="">VIEW</a>
                 </div>
             </li>
             <li>
                 <div class="img">
-                    <img src="/asset/image/main/list_view.jpg" alt="">
+                    <img src="/asset/image/main/list_view2.jpg" alt="">
                 </div>
                 <div class="tbx">
-                    <p>① 디크리스</p>
+                    <p>② D-BLACK PROJECT</p>
                     <a href="">VIEW</a>
                 </div>
             </li>
@@ -47,6 +52,7 @@
         <main class="_main">
 
             <div class="desktop">
+
                 <div class="background-image">
                     <img class="img01" src="/asset/image/pc/1.jpg" alt="">
                     <img class="img02" src="/asset/image/pc/2.jpg" alt="">
@@ -57,15 +63,18 @@
 
                 <section class="section01">
 
-                    <div class="im-box">
-                        <div class="bb"></div>
+                    <a href="/" class="im-box">
+                        <div class="bb">
+                            <div class="back"></div>
+                            <div class="back back2"></div>
+                        </div>
                         <div class="tbx">
                             <p>DCHRIS</p>
                             <div class="line">
                                 <div class="arr"><img src="/asset/image/main/green-arr.png" alt=""></div>
                             </div>
                         </div>
-                    </div>
+                    </a>
 
                     <div class="scroll-box">
                         <p>SCROLL DOWN</p>
@@ -79,18 +88,20 @@
                             DCHRIS
                         </h2>
 
-                        <div class="p">
-                            <p>
-                                D-black SMP Design is a professional. <br/>
-                                As an SMP educational institution, the latest SMP <br/>
-                                technology ASMP advanced technology developed <br/>
-                                for the first time in the world based on the best <br/>
-                                SMP expert leading formation.
-                            </p>
-                            <nav>
-                                <a href="">ABOUT</a>
-                                <a href="">MORE</a>
-                            </nav>
+                        <div class="fade">
+                            <div class="p">
+                                <p>
+                                    D-black SMP Design is a professional. <br/>
+                                    As an SMP educational institution, the latest SMP <br/>
+                                    technology ASMP advanced technology developed <br/>
+                                    for the first time in the world based on the best <br/>
+                                    SMP expert leading formation.
+                                </p>
+                                <nav>
+                                    <a href="">ABOUT</a>
+                                    <a href="">MORE</a>
+                                </nav>
+                            </div>
                         </div>
                     </div>
 
@@ -98,52 +109,66 @@
 
                 <section class="section02">
 
-                    <div class="col left-top">
+                    <div class="col left-top" data-text="D-BLACK ACADEMY">
                         <p>D-BLACK ACADEMY</p>
                         <div class="video">
-                            <iframe src="https://www.youtube.com/embed/zBXOZ_SvUqA?si=2xZJEVe_nU2dQuGu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <video muted loop>
+                                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+                            </video>
                         </div>
                     </div>
 
-                    <div class="col left">
+                    <div class="col left" data-text="DCHRIS">
                         <p>DCHRIS</p>
                         <div class="video">
-                            <iframe src="https://www.youtube.com/embed/zBXOZ_SvUqA?si=2xZJEVe_nU2dQuGu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <video muted loop>
+                                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+                            </video>
                         </div>
                     </div>
 
-                    <div class="col left">
+                    <div class="col left" data-text="DX BLACK">
                         <p>DX BLACK</p>
                         <div class="video">
-                            <iframe src="https://www.youtube.com/embed/zBXOZ_SvUqA?si=2xZJEVe_nU2dQuGu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <video muted loop>
+                                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+                            </video>
                         </div>
                     </div>
 
-                    <div class="col left">
+                    <div class="col left" data-text="D-VERGENCE">
                         <p>D-VERGENCE</p>
                         <div class="video">
-                            <iframe src="https://www.youtube.com/embed/zBXOZ_SvUqA?si=2xZJEVe_nU2dQuGu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <video muted loop>
+                                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+                            </video>
                         </div>
                     </div>
 
-                    <div class="col right">
+                    <div class="col right" data-text="D-BLACK PROJECT">
                         <p>D-BLACK PROJECT</p>
                         <div class="video">
-                            <iframe src="https://www.youtube.com/embed/zBXOZ_SvUqA?si=2xZJEVe_nU2dQuGu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <video muted loop>
+                                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+                            </video>
                         </div>
                     </div>
 
-                    <div class="col right">
+                    <div class="col right" data-text="D-SCALP CARE">
                         <p>D-SCALP CARE</p>
                         <div class="video">
-                            <iframe src="https://www.youtube.com/embed/zBXOZ_SvUqA?si=2xZJEVe_nU2dQuGu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <video muted loop>
+                                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+                            </video>
                         </div>
                     </div>
 
-                    <div class="col right">
+                    <div class="col right" data-text="D-STAR">
                         <p>D-STAR</p>
                         <div class="video">
-                            <iframe src="https://www.youtube.com/embed/zBXOZ_SvUqA?si=2xZJEVe_nU2dQuGu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <video muted loop>
+                                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+                            </video>
                         </div>
                     </div>
 
@@ -158,6 +183,157 @@
                     <img class="right" src="/asset/image/mob/mob3.jpg" alt="">
                 </div>
 
+                <div class="overflow">
+                    <div class="circle-slide">
+                        <div class="slidebox">
+                            <div class="slide center">
+                                <div class="imgbox">
+                                    <div class="img">
+                                        <img src="/asset/image/main/dchris.jpg" alt="">
+                                    </div>
+                                    <div class="flex">
+                                        <button class="prev"><i class="xi-angle-left-min"></i></button>
+                                        <p>Dblack Project</p>
+                                        <button class="next"><i class="xi-angle-right-min"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="imgbox">
+                                    <div class="img">
+                                        <img src="/asset/image/main/dchris.jpg" alt="">
+                                    </div>
+                                    <div class="flex">
+                                        <button class="prev"><i class="xi-angle-left-min"></i></button>
+                                        <p>Dblack Project</p>
+                                        <button class="next"><i class="xi-angle-right-min"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="imgbox">
+                                    <div class="img">
+                                        <img src="/asset/image/main/dchris.jpg" alt="">
+                                    </div>
+                                    <div class="flex">
+                                        <button class="prev"><i class="xi-angle-left-min"></i></button>
+                                        <p>Dblack Project</p>
+                                        <button class="next"><i class="xi-angle-right-min"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="imgbox">
+                                    <div class="img">
+                                        <img src="/asset/image/main/dchris.jpg" alt="">
+                                    </div>
+                                    <div class="flex">
+                                        <button class="prev"><i class="xi-angle-left-min"></i></button>
+                                        <p>Dblack Project</p>
+                                        <button class="next"><i class="xi-angle-right-min"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="imgbox">
+                                    <div class="img">
+                                        <img src="/asset/image/main/dchris.jpg" alt="">
+                                    </div>
+                                    <div class="flex">
+                                        <button class="prev"><i class="xi-angle-left-min"></i></button>
+                                        <p>Dblack Project</p>
+                                        <button class="next"><i class="xi-angle-right-min"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="imgbox">
+                                    <div class="img">
+                                        <img src="/asset/image/main/dchris.jpg" alt="">
+                                    </div>
+                                    <div class="flex">
+                                        <button class="prev"><i class="xi-angle-left-min"></i></button>
+                                        <p>Dblack Project</p>
+                                        <button class="next"><i class="xi-angle-right-min"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="imgbox">
+                                    <div class="img">
+                                        <img src="/asset/image/main/dchris.jpg" alt="">
+                                    </div>
+                                    <div class="flex">
+                                        <button class="prev"><i class="xi-angle-left-min"></i></button>
+                                        <p>Dblack Project</p>
+                                        <button class="next"><i class="xi-angle-right-min"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="imgbox">
+                                    <div class="img">
+                                        <img src="/asset/image/main/dchris.jpg" alt="">
+                                    </div>
+                                    <div class="flex">
+                                        <button class="prev"><i class="xi-angle-left-min"></i></button>
+                                        <p>Dblack Project</p>
+                                        <button class="next"><i class="xi-angle-right-min"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="imgbox">
+                                    <div class="img">
+                                        <img src="/asset/image/main/dchris.jpg" alt="">
+                                    </div>
+                                    <div class="flex">
+                                        <button class="prev"><i class="xi-angle-left-min"></i></button>
+                                        <p>Dblack Project</p>
+                                        <button class="next"><i class="xi-angle-right-min"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="imgbox">
+                                    <div class="img">
+                                        <img src="/asset/image/main/dchris.jpg" alt="">
+                                    </div>
+                                    <div class="flex">
+                                        <button class="prev"><i class="xi-angle-left-min"></i></button>
+                                        <p>Dblack Project</p>
+                                        <button class="next"><i class="xi-angle-right-min"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="imgbox">
+                                    <div class="img">
+                                        <img src="/asset/image/main/dchris.jpg" alt="">
+                                    </div>
+                                    <div class="flex">
+                                        <button class="prev"><i class="xi-angle-left-min"></i></button>
+                                        <p>Dblack Project</p>
+                                        <button class="next"><i class="xi-angle-right-min"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="imgbox">
+                                    <div class="img">
+                                        <img src="/asset/image/main/dchris.jpg" alt="">
+                                    </div>
+                                    <div class="flex">
+                                        <button class="prev"><i class="xi-angle-left-min"></i></button>
+                                        <p>Dblack Project</p>
+                                        <button class="next"><i class="xi-angle-right-min"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <nav class="m_nav">
                     <a href=""><i class="xi-kakaotalk"></i> KaKao Talk</a>
                     <a href=""><i class="xi-whatsapp"></i> Whats app</a>
@@ -169,90 +345,7 @@
     </div>
 </div>
 
-<script>
-
-    gsap.registerPlugin(ScrollTrigger,ScrollSmoother);
-    
-    ScrollSmoother.create({
-        smooth: 1,
-    });
-
-    ScrollTrigger.create({
-        trigger : "._main .background-image",
-        endTrigger : "._main",
-        start : "top top",
-        pin : true,
-        pinSpace : true
-    });
-
-/* 
-
-    $('._main .section01 .section01-two .col').mouseover(function(){
-
-        if($(this).hasClass('left-top')){
-
-            gsap.to('.img05',{
-                opacity : 1
-            });
-
-            gsap.to('.img01, .img02, .img04',{
-                opacity : 0
-            });
-
-        }
-
-        if($(this).hasClass('left')){
-
-            gsap.to('.img01',{
-                opacity : 1
-            });
-
-            gsap.to('.img02, .img04, .img05',{
-                opacity : 0
-            });
-
-        }
-
-        if($(this).hasClass('right')){
-
-            gsap.to('.img02',{
-                opacity : 1
-            });
-
-            gsap.to('.img01, .img04, .img05',{
-                opacity : 0
-            });
-
-        }
-
-    });
-
-    $('._main .section01 .section01-two .col').mouseleave(function(){
-
-        gsap.to('.img01, .img02, .img04, .img05',{
-            opacity : 0
-        });
-
-    });
-
-    $('._main .section01 .section01-two .col').mouseover(function(){
-        gsap.to($(this).find('.video'),{
-            width : 377.99,
-            height : 213
-        });
-    });
-
-    $('._main .section01 .section01-two .col').mouseleave(function(){
-        gsap.to($(this).find('.video'),{
-            width : `${170*100/1920*1}vw`,
-            height : `${118*100/1920*1}vw`
-        });
-    });
-
-*/
-
-</script>
-
+<script type="module" src="/js/kjy/main/main.js"></script>
 
 <?php 
     include_once $_SERVER["DOCUMENT_ROOT"]."/_end.php"
