@@ -176,6 +176,17 @@
   margin-top: 6.7073170732vw;
   font-family: "Outfit";
 }
+.list-view .scroll i {
+  animation: i 2s infinite alternate ease-in;
+}
+@keyframes i {
+  0% {
+    transform: translateY(-2.5px);
+  }
+  100% {
+    transform: translateY(2.5px);
+  }
+}
 .list-view .over {
   padding-bottom: 45px;
   box-sizing: border-box;
@@ -252,6 +263,12 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+._main .intro video.pc {
+  display: block;
+}
+._main .intro video.mob {
+  display: none;
+}
 ._main .intro .lang {
   font-family: "Outfit";
   font-weight: 400;
@@ -312,6 +329,12 @@
   }
 }
 @media screen and (max-width: 820px) {
+  ._main .intro video.pc {
+    display: none;
+  }
+  ._main .intro video.mob {
+    display: block;
+  }
   ._main .intro .lang {
     display: none;
   }

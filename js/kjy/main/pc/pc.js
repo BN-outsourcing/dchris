@@ -22,8 +22,11 @@ export default ()=>{
     .to('._main .desktop .section01 .im-box .bb .back2',{
         scaleX : 0
     },'a+=30%')
-
-    gsap.from('._main .desktop .section01 .inline .fade .p',{
+    .from('._main .desktop .section01 .inline .bt',{
+        y: 100,
+        opacity : 0
+    },'a+=50%')
+    .from('._main .desktop .section01 .inline .fade .p',{
         x : 50,
         opacity : 0
     });

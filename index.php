@@ -7,10 +7,19 @@
         <main class="_main">
             <section class="intro">
                 <video 
+                    class="pc"
                     src="/asset/video/pc.mp4" 
-                    autoplay 
-                    muted 
-                    playsinline 
+                    autoplay
+                    muted
+                    playsinline
+                    loop
+                ></video>
+                <video 
+                    class="mob"
+                    src="/asset/video/mobile.mp4"
+                    autoplay
+                    muted
+                    playsinline
                     loop
                 ></video>
 
