@@ -15,7 +15,30 @@ export default ()=>{
         pinSpace : true
     });
 
-    gsap.timeline({})
+    gsap.timeline()
+    .fromTo("._main .desktop .section01 .im-box .bb img",{
+        scale : 1.3
+    },{
+        scale : 1,
+        delay : 0.1,
+        duration : 0.8,
+    })
+    .from('._main .desktop .section01 .inline .fade .p',{
+        x : 50,
+        opacity : 0
+    });
+
+    gsap.to('._main .desktop .section01 .inline .bt',{
+        y : "-100vh",
+        scrollTrigger : {
+            trigger : "._main .desktop .section01",
+            pin : true,
+            scrub : 1,
+        }
+    })
+    
+
+    /* gsap.timeline({})
     .to('._main .desktop .section01 .im-box .bb .back:not(.back2)',{
         scaleX : 0
     },'a')
@@ -29,7 +52,7 @@ export default ()=>{
     .from('._main .desktop .section01 .inline .fade .p',{
         x : 50,
         opacity : 0
-    });
+    }); */
 
     const mm = gsap.matchMedia();
 

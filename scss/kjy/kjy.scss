@@ -96,6 +96,8 @@
 
     @media screen and (max-width : 480px) {
 
+        padding: 21px 4.6341463415% 21px 2.5609756098%;
+
         .logo {
             width: 74px;
         }
@@ -132,6 +134,7 @@
     font-size: 18px;
     pointer-events: none;
     opacity: 0;
+    white-space: nowrap;
 
     &::before {
         content: '';
@@ -166,12 +169,23 @@
         font-size: 17px;
         font-family: 'Outfit';
         letter-spacing: -0.045em;
+        transition: background .4s;
+
         i {
             font-size: calc(18/17*1em);
         }
 
         &:first-child {
-            background: #24ff00;
+            
+            &:hover {
+                background: #24ff00;
+            }
+
+        }
+        &:last-child {
+            &:hover {
+                background: #FEE500;
+            }
         }
 
     }
@@ -189,7 +203,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 5;
+    z-index: 6;
     transform: translateY(-150%);
     transition: transform .4s;
 
@@ -205,7 +219,7 @@
         position: absolute;
         top: 100%;
         right: calc(55*100/820*1vw);
-        margin-top: calc(55*100/820*1vw);
+        margin-top: calc(45*100/820*1vw);
         font-family: 'Outfit';
 
         i {
@@ -230,7 +244,7 @@
         box-sizing: border-box;
         overflow-y: auto;
         .small {
-            padding: 34px calc(43/820*100%) 40px;
+            padding: calc(34/20*1em) calc(43/820*100%) calc(40/20*1em);
             font-family: 'Outfit';
             font-size: 20px;
             letter-spacing: -0.045em;
@@ -284,6 +298,8 @@
 
     @media screen and (max-width : 480px) {
 
+        padding-top: 76.31px;
+
         .scroll { 
             font-size: 14px;
             margin-top: 25px;
@@ -310,6 +326,13 @@
 }
 
 ._main {
+
+    position: relative;
+    
+
+    @media screen and (max-width:820px) {
+        overflow-x: hidden;
+    }
 
     .intro {
         height: 100vh;
@@ -424,7 +447,8 @@
                 transform: translate(-50%,-50%);
                 display: flex;
                 flex-direction: column;
-                gap: calc(175*100/820*1vw);
+                font-size: calc(127*100/820*1vw);
+                gap: calc(175/127*1em);
                 mix-blend-mode: difference;
             }
 
@@ -435,9 +459,15 @@
                 top: auto;
                 bottom: auto;
                 text-align: center;
-                font-size: calc(127*100/820*1vw);
+                font-size: inherit;
             }
 
+        }
+
+        @media screen and (max-width : 480px) {
+            .sel-box {
+                font-size: 10.487805vw;
+            }
         }
 
     }
@@ -484,10 +514,19 @@
                 .bb {
                     width: 194px;
                     height: 272px;
-                    background: url(/asset/image/main/dchris.jpg) no-repeat center/cover;
                     position: relative;
+                    overflow: hidden;
+                    
+                    img {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
 
-                    .back {
+                    /* .back {
                         position: absolute;
                         left: 0;
                         top: 0;
@@ -500,7 +539,7 @@
                             background: #fff;
                             z-index: 1;
                         }
-                    }
+                    } */
 
                 }
                 .tbx {
@@ -515,17 +554,23 @@
                     font-weight: 400;
     
                     .line {
-                        width: 20px;
                         height: 1px;
                         background: #00ff42;
                         margin-left: 13px;
                         position: relative;
-                        transition: width .4s;
+                        .bar {
+                            width: 20px;
+                            height: 100%;
+                            transition: width .4s;
+                        }
                         .arr {
                             position: absolute;
                             right: 0;
                             top: 50%;
                             transform: translateY(-50%);
+                            width: 8px;
+                            height: 15px;
+                            z-index: 2;
                         }
                     }
     
@@ -534,7 +579,9 @@
                 &:hover {
                     .tbx {
                         .line {
-                            width: 71px;
+                            .bar {
+                                width: 71px;
+                            }
                         }
                     }
                 }
@@ -636,7 +683,9 @@
                     &:hover {
                         .tbx {
                             .line {
-                                width: 51px;
+                                .bar{
+                                    width: 51px;
+                                }
                             }
                         }
                     }
@@ -703,7 +752,7 @@
     
                 &:nth-of-type(2) {
                     right: calc(1247/1920*100%);
-                    top: calc(522/980*100%);
+                    top: calc(480/980*100%);
                 }
     
                 &:nth-of-type(3) {
@@ -713,7 +762,8 @@
     
                 &:nth-of-type(4) {
                     left: calc(628/1920*100%);
-                    top: calc(754/980*100%);
+                    // top: calc(754/980*100%);
+                    top: 72.93%;
                 }
     
                 &:nth-of-type(5) {
@@ -722,7 +772,8 @@
                 }
     
                 &:nth-of-type(6) {
-                    left: calc(1527/1920*100%);
+                    // left: calc(1527/1920*100%);
+                    left: 76.53%;
                     top: calc(388/980*100%);
                 }
     
@@ -807,9 +858,11 @@
 
         .background-image {
 
-            height: 100vh;
+            height: 100vh; /* 혹시나 Custom Property 지원 안하는 브라우저를 위한 복귀점(Fallback) */
+            height: calc(var(--vh, 1vh) * 100);
             position: relative;
             box-sizing: border-box;
+            pointer-events: none;
 
             .center {
                 opacity: 1;
@@ -829,7 +882,205 @@
 
         }
 
-        .overflow {
+        .swiper {
+            position: absolute;
+            top: 98px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 110%;
+            overflow: visible;
+
+            .swiper-slide {
+                overflow: visible;
+            }
+
+            .swiper-slide-active {
+
+                .imgbox {
+                    opacity: 1;
+                    .img {
+                        &::before {
+                            opacity: 0;
+                        }
+                    }
+                }
+                
+                .flex {
+                    pointer-events: all;
+                    transform: scale(1);
+                    button {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    p {
+                       opacity: 1;
+                    }
+                }
+
+            }
+
+        }
+
+        .imgbox {
+            position: static;
+            top: 0;
+            // left: 50%;
+            // transform: translate(-50%,-50%);
+            // transition: width .4s;
+            width: 100%;
+            color: #fff;
+
+            .img {
+                width: 100%;
+                margin: 0 auto;
+                border-radius: 31px;
+                overflow: hidden;
+                position: relative;
+
+                img,video {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba($color: #000000, $alpha: 0.74);
+                    z-index: 1;
+                    transition: opacity .4s;
+                }
+
+                &::after {
+                    content: '';
+                    display: block;
+                    padding-bottom: calc(303.59/437.53*100%);
+                }
+
+            }
+
+            .flex {
+                position: relative;
+                // top: 100%;
+                // left: 50%;
+                // transform: translateX(-50%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: calc(28*100/820*1vw);
+                letter-spacing: -0.045em;
+                gap: calc(15/32*1em);
+                margin-top: 1em;
+                white-space: nowrap;
+                transform: scale(0.7);
+                pointer-events: none;
+                z-index: 10;
+
+                button {
+                    all: unset;
+                    cursor: pointer;
+                    opacity: 0;
+                    visibility: hidden;
+                    font-size: 1.4em;
+                    pointer-events: all;
+                    i {
+                        vertical-align: middle;
+                    }
+                }
+                
+                p {
+                    font-family: 'Outfit';
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    opacity: 0.29;
+                    // transition: all .4s;
+                }
+            }
+
+        }
+
+
+        @media screen and (max-width:480px) {
+            
+            .imgbox {
+
+                .img {
+                    border-radius: 15px;
+                }
+
+            }
+
+        }
+
+
+        .m_nav {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: calc(92/28*1em) calc(51/820*100%) calc(92/28*1em) calc(53/820*100%);
+            box-sizing: border-box;
+            gap: calc(23/32*1em);
+            display: flex;
+            flex-direction: column;
+            // font-size: calc(32*100/820*1vw);
+            font-size: calc(24*100/820*1vw);
+            z-index: 5;
+
+            a {
+                height: calc(92.99/32*1em);
+                width: 100%;
+                border: 1px solid #fff;
+                display: flex;
+                box-sizing: border-box;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Outfit';
+                letter-spacing: -0.045em;
+                color: #fff;
+                gap: calc(22/32*1em);
+                cursor: pointer;
+                transition: .4s;
+                transition-property: background,border,color;
+
+                &:nth-of-type(1) {
+                    &:hover {
+                        background: #FEE500;
+                        color: #000;
+                        border-color: #FEE500;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    &:hover {
+                        background: #18ff00;
+                        color: #000;
+                        border-color: #18ff00;
+                    }
+                }
+                
+            }
+
+
+            @media screen and (max-width : 480px) {
+                
+                font-size: 16px;
+
+            }
+            
+        }
+
+
+        /* 
+        
+            .overflow {
             position: absolute;
             top: 0;
             left: 0;
@@ -867,85 +1118,6 @@
                     border-radius: 10000%;
                     pointer-events: none;
 
-                    .imgbox {
-                        position: absolute;
-                        top: 0;
-                        left: 50%;
-                        transform: translate(-50%,-50%);
-                        width: 18%;
-                        transition: width .4s;
-
-                        .img {
-                            width: 100%;
-                            margin: 0 auto;
-                            border-radius: 31px;
-                            overflow: hidden;
-                            position: relative;
-
-                            img {
-                                position: absolute;
-                                left: 0;
-                                top: 0;
-                                width: 100%;
-                                height: 100%;
-                                object-fit: cover;
-                            }
-
-                            &::before {
-                                content: '';
-                                position: absolute;
-                                left: 0;
-                                top: 0;
-                                width: 100%;
-                                height: 100%;
-                                background: rgba($color: #000000, $alpha: 0.74);
-                                z-index: 1;
-                                transition: opacity .4s;
-                            }
-
-                            &::after {
-                                content: '';
-                                display: block;
-                                padding-bottom: calc(303.59/437.53*100%);
-                            }
-                        }
-
-                        .flex {
-                            position: absolute;
-                            top: 100%;
-                            left: 50%;
-                            transform: translateX(-50%);
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            font-size: 20px;
-                            letter-spacing: -0.045em;
-                            gap: 15px;
-                            margin-top: 1em;
-                            white-space: nowrap;
-
-                            button {
-                                all: unset;
-                                cursor: pointer;
-                                opacity: 0;
-                                visibility: hidden;
-                                font-size: 32px;
-                                i {
-                                    vertical-align: middle;
-                                }
-                            }
-                            
-                            p {
-                                font-family: 'Outfit';
-                                text-transform: uppercase;
-                                font-weight: 600;
-                                opacity: 0.29;
-                                transition: all .4s;
-                            }
-                        }
-
-                    }
-
                     &.center {
 
                         .imgbox {
@@ -976,84 +1148,52 @@
 
             }
 
+
             @media screen and (max-width : 480px) {
                 
                 width: 950px;
 
-                .slidebox .slide{
-
-                    .imgbox {
-                        width: 17.5%;
-                        .img {
-                            border-radius: 16px;
-                        }
-                        .flex {
-                            font-size: 16px;
-                        }
+                .imgbox {
+                    .img {
+                        border-radius: 16px;
                     }
-
-                    &.center {
-                        .imgbox {
-                            width: 20%;
-                        }
-                        .flex {
-                            font-size: 20px;
-                            button {
-                                font-size: 20px;
-                            }
-                            gap: 10px;
-                        }
+                    .flex {
+                        font-size: 16px;
                     }
-
                 }
+
+                // .slidebox .slide{
+
+                //     .imgbox {
+                //         width: 17.5%;
+                //         .img {
+                //             border-radius: 16px;
+                //         }
+                //         .flex {
+                //             font-size: 16px;
+                //         }
+                //     }
+
+                //     &.center {
+                //         .imgbox {
+                //             width: 20%;
+                //         }
+                //         .flex {
+                //             font-size: 20px;
+                //             button {
+                //                 font-size: 20px;
+                //             }
+                //             gap: 10px;
+                //         }
+                //     }
+
+                // }
 
             }
 
         }
 
-        .m_nav {
-            position: absolute;
-            z-index: 3;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            padding: calc(92*100/820*1vw) calc(51/820*100%) calc(92*100/820*1vw) calc(53/820*100%);
-            box-sizing: border-box;
-            gap: calc(23/32*1em);
-            display: flex;
-            flex-direction: column;
-            font-size: calc(32*100/820*1vw);
-            a {
-                height: calc(92.99/32*1em);
-                width: 100%;
-                border: 1px solid #fff;
-                display: flex;
-                box-sizing: border-box;
-                align-items: center;
-                justify-content: center;
-                font-family: 'Outfit';
-                letter-spacing: -0.045em;
-                color: #fff;
-                gap: calc(22/32*1em);
-                cursor: pointer;
-
-                &:nth-of-type(2) {
-                    background: #18ff00;
-                    color: #000;
-                    border-color: #18ff00;
-                }
-            }
-
-
-            @media screen and (max-width : 480px) {
-                
-                a {
-                    font-size: 20px;
-                }
-
-            }
-            
-        }
+        */
         
     }
 

@@ -64,12 +64,12 @@
 
                     <a href="/" class="im-box">
                         <div class="bb">
-                            <div class="back"></div>
-                            <div class="back back2"></div>
+                            <img src="/asset/image/main/dchris.jpg" alt="">
                         </div>
                         <div class="tbx">
                             <p>DCHRIS</p>
                             <div class="line">
+                                <div class="bar"></div>
                                 <div class="arr"><img src="/asset/image/main/green-arr.png" alt=""></div>
                             </div>
                         </div>
@@ -111,63 +111,49 @@
                     <div class="col left-top" data-text="디블랙 아카데미">
                         <p>D-BLACK ACADEMY</p>
                         <div class="video">
-                            <video muted loop>
-                                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
-                            </video>
+                            <video src="/asset/video/test/academy.mp4" muted loop playsinline></video>
                         </div>
                     </div>
 
                     <div class="col left" data-text="디크리스">
                         <p>DCHRIS</p>
                         <div class="video">
-                            <video muted loop>
-                                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
-                            </video>
+                        <video src="/asset/video/academy.mp4" muted loop playsinline></video>
                         </div>
                     </div>
 
                     <div class="col left" data-text="디엑스 블랙">
                         <p>DX BLACK</p>
                         <div class="video">
-                            <video muted loop>
-                                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
-                            </video>
+                        <video src="/asset/video/academy.mp4" muted loop playsinline></video>
                         </div>
                     </div>
 
                     <div class="col left" data-text="디버전스">
                         <p>D-VERGENCE</p>
                         <div class="video">
-                            <video muted loop>
-                                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
-                            </video>
+                        <video src="/asset/video/academy.mp4" muted loop playsinline></video>
                         </div>
                     </div>
 
                     <div class="col right" data-text="디블랙 프로젝트">
                         <p>D-BLACK PROJECT</p>
                         <div class="video">
-                            <video muted loop>
-                                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
-                            </video>
+                        <video src="/asset/video/academy.mp4" muted loop playsinline></video>
                         </div>
                     </div>
 
                     <div class="col right" data-text="디스칼프 케어">
                         <p>D-SCALP CARE</p>
                         <div class="video">
-                            <video muted loop>
-                                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
-                            </video>
+                        <video src="/asset/video/academy.mp4" muted loop playsinline></video>
                         </div>
                     </div>
 
                     <div class="col right" data-text="디스타">
                         <p>D-STAR</p>
                         <div class="video">
-                            <video muted loop>
-                                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
-                            </video>
+                        <video src="/asset/video/academy.mp4" muted loop playsinline></video>
                         </div>
                     </div>
 
@@ -182,7 +168,103 @@
                     <img class="right" src="/asset/image/mob/mob3.jpg" alt="">
                 </div>
 
-                <div class="overflow">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="imgbox">
+                                <div class="img">
+                                    <video src="/asset/video/academy.mp4" muted loop autoplay playsinline></video>
+                                </div>
+                                <div class="flex">
+                                    <button class="prev"><i class="xi-angle-left-min"></i></button>
+                                    <p>Dblack Project</p>
+                                    <button class="next"><i class="xi-angle-right-min"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgbox">
+                                <div class="img">
+                                    <img src="/asset/image/main/dchris.jpg" alt="">
+                                </div>
+                                <div class="flex">
+                                    <button class="prev"><i class="xi-angle-left-min"></i></button>
+                                    <p>Dblack Project</p>
+                                    <button class="next"><i class="xi-angle-right-min"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgbox">
+                                <div class="img">
+                                    <img src="/asset/image/main/dchris.jpg" alt="">
+                                </div>
+                                <div class="flex">
+                                    <button class="prev"><i class="xi-angle-left-min"></i></button>
+                                    <p>Dblack Project</p>
+                                    <button class="next"><i class="xi-angle-right-min"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgbox">
+                                <div class="img">
+                                    <img src="/asset/image/main/dchris.jpg" alt="">
+                                </div>
+                                <div class="flex">
+                                    <button class="prev"><i class="xi-angle-left-min"></i></button>
+                                    <p>Dblack Project</p>
+                                    <button class="next"><i class="xi-angle-right-min"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgbox">
+                                <div class="img">
+                                    <img src="/asset/image/main/dchris.jpg" alt="">
+                                </div>
+                                <div class="flex">
+                                    <button class="prev"><i class="xi-angle-left-min"></i></button>
+                                    <p>Dblack Project</p>
+                                    <button class="next"><i class="xi-angle-right-min"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgbox">
+                                <div class="img">
+                                    <img src="/asset/image/main/dchris.jpg" alt="">
+                                </div>
+                                <div class="flex">
+                                    <button class="prev"><i class="xi-angle-left-min"></i></button>
+                                    <p>Dblack Project</p>
+                                    <button class="next"><i class="xi-angle-right-min"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="m_nav">
+                    <a href=""><i class="xi-kakaotalk"></i> KaKao Talk</a>
+                    <a href=""><i class="xi-whatsapp"></i> Whats app</a>
+                </nav>
+
+            </div>
+
+        </main>
+    </div>
+</div>
+
+
+<script type="module" src="/js/kjy/main/main.js"></script>
+
+<?php 
+    include_once $_SERVER["DOCUMENT_ROOT"]."/_end.php"
+?>
+
+
+<!-- <div class="overflow">
                     <div class="circle-slide">
                         <div class="slidebox">
                             <div class="slide center">
@@ -331,21 +413,4 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <nav class="m_nav">
-                    <a href=""><i class="xi-kakaotalk"></i> KaKao Talk</a>
-                    <a href=""><i class="xi-whatsapp"></i> Whats app</a>
-                </nav>
-
-            </div>
-
-        </main>
-    </div>
-</div>
-
-<script type="module" src="/js/kjy/main/main.js"></script>
-
-<?php 
-    include_once $_SERVER["DOCUMENT_ROOT"]."/_end.php"
-?>
+                </div> -->

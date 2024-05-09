@@ -1,5 +1,48 @@
 export default ()=>{
 
+    new Swiper("._main .mobile .swiper", {
+        loop: true,
+        centeredSlides: true,
+        // centeredSlidesBounds: true,
+        slidesPerView: 2.5,
+        effect: "creative",
+        autoplay : {
+            delay : 3000,
+        },
+        speed : 600,
+        breakpoints : {
+            481 : {
+                slidesPerView: 3.3,
+            }
+        },
+        creativeEffect: {
+            perspective: true,
+            limitProgress: 2,
+            prev: {
+                translate: ['-100%', '25%', -100],
+                rotate: [0, 0, -20],
+                scale : 0.9,
+                origin: "bottom"
+            },
+            next: {
+                translate: ['100%', '25%', -100],
+                rotate: [0, 0, 20],
+                scale : 0.9,
+                origin: "bottom"
+            },
+        },
+        on : {
+            init : (swiper)=>{
+                $('._main .mobile .swiper .swiper-slide .flex button.next').click(function(){
+                    swiper.slideNext();
+                });
+                $('._main .mobile .swiper .swiper-slide .flex button.prev').click(function(){
+                    swiper.slidePrev();
+                });
+            }
+        }
+    });
+
     let chk = 0;
 
     $('._header .gnb .menu').click(function(){
@@ -32,7 +75,11 @@ export default ()=>{
             const max = ( window.innerHeight - $('._main .mobile .m_nav').outerHeight());
 
             $('.list-view .over').css({
-                "max-height" : max - $('._header').outerHeight() - 48
+                "max-height" : max - $('._header').outerHeight() - 28
+            });
+
+            $('._main .mobile .swiper').css({
+                "top" : $('._header').outerHeight() + 30
             });
 
         }
@@ -45,6 +92,11 @@ export default ()=>{
                 top : header + $('._main .mobile .circle-slide .slidebox .slide.center .imgbox').height() / 1.3
             })
 
+        }
+
+        if(window.innerWidth >= 821){
+            $('._header').removeClass('black');
+            $('.list-view').removeClass('active');
         }
 
     }).resize();
