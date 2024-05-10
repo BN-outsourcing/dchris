@@ -111,21 +111,21 @@
                     <div class="col left-top" data-text="디블랙 아카데미">
                         <p>D-BLACK ACADEMY</p>
                         <div class="video">
-                            <video src="/asset/video/test/academy.mp4" muted loop playsinline></video>
+                            <video src="/asset/video/main/academy.mp4" muted loop playsinline></video>
                         </div>
                     </div>
 
                     <div class="col left" data-text="디크리스">
                         <p>DCHRIS</p>
                         <div class="video">
-                        <video src="/asset/video/academy.mp4" muted loop playsinline></video>
+                        <video src="/asset/video/main/DCHRIS.mp4" muted loop playsinline></video>
                         </div>
                     </div>
 
                     <div class="col left" data-text="디엑스 블랙">
                         <p>DX BLACK</p>
                         <div class="video">
-                        <video src="/asset/video/academy.mp4" muted loop playsinline></video>
+                        <video src="/asset/video/main/DXBLACK.mp4" muted loop playsinline></video>
                         </div>
                     </div>
 
@@ -139,7 +139,7 @@
                     <div class="col right" data-text="디블랙 프로젝트">
                         <p>D-BLACK PROJECT</p>
                         <div class="video">
-                        <video src="/asset/video/academy.mp4" muted loop playsinline></video>
+                        <video src="/asset/video/main/PROJECT.mp4" muted loop playsinline></video>
                         </div>
                     </div>
 
@@ -153,7 +153,7 @@
                     <div class="col right" data-text="디스타">
                         <p>D-STAR</p>
                         <div class="video">
-                        <video src="/asset/video/academy.mp4" muted loop playsinline></video>
+                        <video src="/asset/video/main/D-STAR.mp4" muted loop playsinline></video>
                         </div>
                     </div>
 
@@ -173,11 +173,11 @@
                         <div class="swiper-slide">
                             <div class="imgbox">
                                 <div class="img">
-                                    <video src="/asset/video/academy.mp4" muted loop autoplay playsinline></video>
+                                    <video src="/asset/video/main/PROJECT.mp4" muted loop autoplay playsinline></video>
                                 </div>
                                 <div class="flex">
                                     <button class="prev"><i class="xi-angle-left-min"></i></button>
-                                    <p>Dblack Project</p>
+                                    <p>D-BLACK PROJECT</p>
                                     <button class="next"><i class="xi-angle-right-min"></i></button>
                                 </div>
                             </div>
@@ -185,11 +185,11 @@
                         <div class="swiper-slide">
                             <div class="imgbox">
                                 <div class="img">
-                                    <img src="/asset/image/main/dchris.jpg" alt="">
+                                    <video src="/asset/video/main/academy.mp4" muted loop autoplay playsinline></video>
                                 </div>
                                 <div class="flex">
                                     <button class="prev"><i class="xi-angle-left-min"></i></button>
-                                    <p>Dblack Project</p>
+                                    <p>D-BLACK ACADEMY</p>
                                     <button class="next"><i class="xi-angle-right-min"></i></button>
                                 </div>
                             </div>
@@ -197,11 +197,11 @@
                         <div class="swiper-slide">
                             <div class="imgbox">
                                 <div class="img">
-                                    <img src="/asset/image/main/dchris.jpg" alt="">
+                                    <video src="/asset/video/main/DCHRIS.mp4" muted loop autoplay playsinline></video>
                                 </div>
                                 <div class="flex">
                                     <button class="prev"><i class="xi-angle-left-min"></i></button>
-                                    <p>Dblack Project</p>
+                                    <p>DCHRIS</p>
                                     <button class="next"><i class="xi-angle-right-min"></i></button>
                                 </div>
                             </div>
@@ -209,11 +209,11 @@
                         <div class="swiper-slide">
                             <div class="imgbox">
                                 <div class="img">
-                                    <img src="/asset/image/main/dchris.jpg" alt="">
+                                    <video src="/asset/video/main/DXBLACK.mp4" muted loop autoplay playsinline></video>
                                 </div>
                                 <div class="flex">
                                     <button class="prev"><i class="xi-angle-left-min"></i></button>
-                                    <p>Dblack Project</p>
+                                    <p>DX BLACK</p>
                                     <button class="next"><i class="xi-angle-right-min"></i></button>
                                 </div>
                             </div>
@@ -221,11 +221,11 @@
                         <div class="swiper-slide">
                             <div class="imgbox">
                                 <div class="img">
-                                    <img src="/asset/image/main/dchris.jpg" alt="">
+                                    <video src="/asset/video/main/academy.mp4" muted loop autoplay playsinline></video>
                                 </div>
                                 <div class="flex">
                                     <button class="prev"><i class="xi-angle-left-min"></i></button>
-                                    <p>Dblack Project</p>
+                                    <p>D-VERGENCE</p>
                                     <button class="next"><i class="xi-angle-right-min"></i></button>
                                 </div>
                             </div>
@@ -233,11 +233,23 @@
                         <div class="swiper-slide">
                             <div class="imgbox">
                                 <div class="img">
-                                    <img src="/asset/image/main/dchris.jpg" alt="">
+                                    <video src="/asset/video/main/academy.mp4" muted loop autoplay playsinline></video>
                                 </div>
                                 <div class="flex">
                                     <button class="prev"><i class="xi-angle-left-min"></i></button>
-                                    <p>Dblack Project</p>
+                                    <p>D-SCALP CARE</p>
+                                    <button class="next"><i class="xi-angle-right-min"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgbox">
+                                <div class="img">
+                                    <video src="/asset/video/main/D-STAR.mp4" muted loop autoplay playsinline></video>
+                                </div>
+                                <div class="flex">
+                                    <button class="prev"><i class="xi-angle-left-min"></i></button>
+                                    <p>D-STAR</p>
                                     <button class="next"><i class="xi-angle-right-min"></i></button>
                                 </div>
                             </div>

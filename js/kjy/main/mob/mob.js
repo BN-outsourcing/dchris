@@ -4,7 +4,7 @@ export default ()=>{
         loop: true,
         centeredSlides: true,
         // centeredSlidesBounds: true,
-        slidesPerView: 2.5,
+        slidesPerView: 3.3,
         effect: "creative",
         autoplay : {
             delay : 3000,
@@ -39,7 +39,43 @@ export default ()=>{
                 $('._main .mobile .swiper .swiper-slide .flex button.prev').click(function(){
                     swiper.slidePrev();
                 });
-            }
+            },
+            slideNextTransitionStart : (swiper, event)=>{
+
+                gsap.to('._main .mobile .background-image .right',{
+                    opacity : 1
+                });
+
+                /* console.log(event);
+
+                if(event.movementX <= 0){
+                    gsap.to('._main .mobile .background-image .left',{
+                        opacity : 1
+                    });
+                }else{
+                    gsap.to('._main .mobile .background-image .right',{
+                        opacity : 1
+                    });
+                } */
+            },
+            slidePrevTransitionStart : ()=>{
+
+                gsap.to('._main .mobile .background-image .left',{
+                    opacity : 1
+                });
+
+            },
+            transitionEnd : ()=>{
+                
+                gsap.to('._main .mobile .background-image .left',{
+                    opacity : 0
+                });
+        
+                gsap.to('._main .mobile .background-image .right',{
+                    opacity : 0
+                });
+
+            },
         }
     });
 
@@ -75,11 +111,11 @@ export default ()=>{
             const max = ( window.innerHeight - $('._main .mobile .m_nav').outerHeight());
 
             $('.list-view .over').css({
-                "max-height" : max - $('._header').outerHeight() - 28
+                "max-height" : max - $('._header').outerHeight()
             });
 
             $('._main .mobile .swiper').css({
-                "top" : $('._header').outerHeight() + 30
+                "top" : $('._header').outerHeight() + 15
             });
 
         }
