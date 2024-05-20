@@ -1,18 +1,10 @@
+// 데스크탑
 export default ()=>{
 
-    // 데스크탑
     gsap.registerPlugin(ScrollTrigger,ScrollSmoother);
 
     ScrollSmoother.create({
         smooth: 1,
-    });
-
-    ScrollTrigger.create({
-        trigger : "._main .background-image",
-        endTrigger : "._main",
-        start : "top top",
-        pin : true,
-        pinSpace : true
     });
 
     gsap.timeline()
@@ -22,38 +14,38 @@ export default ()=>{
         scale : 1,
         delay : 0.1,
         duration : 0.8,
+        onComplete : ()=>{
+            $('._main .desktop .section01 .im-box .bb').append('<img src="/asset/image/main/dchris.gif" alt="">');
+        }
     })
     .from('._main .desktop .section01 .inline .fade .p',{
-        x : 50,
+        y : 50,
         opacity : 0
     });
 
-    gsap.to('._main .desktop .section01 .inline .bt',{
-        y : "-100vh",
+    gsap.timeline({
         scrollTrigger : {
             trigger : "._main .desktop .section01",
             pin : true,
+            end : "+=300%",
             scrub : 1,
         }
     })
+    .to('._main .desktop .section01 .inline .bt',{
+        y : "-100vh",
+    },'a')
+    .to('._main .desktop .section01 .inline .fade',{
+        y : "-100vh",
+    },'a+=50%')
+    .to('._main .desktop .section01 .im-box',{
+        y : "-100vh",
+    },'a+=50%')
+    .to('._main .desktop .section01 .scroll-box',{
+        y : "-100vh",
+    },'a+=50%');
     
 
-    /* gsap.timeline({})
-    .to('._main .desktop .section01 .im-box .bb .back:not(.back2)',{
-        scaleX : 0
-    },'a')
-    .to('._main .desktop .section01 .im-box .bb .back2',{
-        scaleX : 0
-    },'a+=30%')
-    .from('._main .desktop .section01 .inline .bt',{
-        y: 100,
-        opacity : 0
-    },'a+=50%')
-    .from('._main .desktop .section01 .inline .fade .p',{
-        x : 50,
-        opacity : 0
-    }); */
-
+    // 영상 크기 조절
     const mm = gsap.matchMedia();
 
     mm.add("(min-width:1281px)",()=>{
@@ -98,16 +90,16 @@ export default ()=>{
 
     });
 
-
+    // 얼굴 움직임
     $('._main .desktop .section02 .col').mouseover(function(){
 
         if($(this).hasClass('left-top')){
 
-            gsap.to('.img05',{
+            gsap.to('.img04',{
                 opacity : 1
             });
 
-            gsap.to('.img01, .img02, .img04',{
+            gsap.to('.imgall:not(.img04)',{
                 opacity : 0
             });
 
@@ -115,11 +107,23 @@ export default ()=>{
 
         if($(this).hasClass('left')){
 
+            gsap.to('.img03',{
+                opacity : 1
+            });
+
+            gsap.to('.imgall:not(.img03)',{
+                opacity : 0
+            });
+
+        }
+
+        if($(this).hasClass('left-bottom')){
+
             gsap.to('.img01',{
                 opacity : 1
             });
 
-            gsap.to('.img02, .img04, .img05',{
+            gsap.to('.imgall:not(.img01)',{
                 opacity : 0
             });
 
@@ -127,29 +131,56 @@ export default ()=>{
 
         if($(this).hasClass('right')){
 
-            gsap.to('.img02',{
+            gsap.to('.img05',{
                 opacity : 1
             });
 
-            gsap.to('.img01, .img04, .img05',{
+            gsap.to('.imgall:not(.img05)',{
                 opacity : 0
             });
 
         }
 
-        });
+        if($(this).hasClass('right-top')){
+
+            gsap.to('.img07',{
+                opacity : 1
+            });
+
+            gsap.to('.imgall:not(.img07)',{
+                opacity : 0
+            });
+
+        }
+
+        if($(this).hasClass('right-bottom')){
+
+            gsap.to('.img06',{
+                opacity : 1
+            });
+
+            gsap.to('.imgall:not(.img06)',{
+                opacity : 0
+            });
+
+        }
+
+    });
 
     $('._main .desktop .section02 .col').mouseleave(function(){
 
-        gsap.to('.img01, .img02, .img04, .img05',{
+        gsap.to('.imgall',{
             opacity : 0
         });
 
     });
 
+    // 영상 커짐
     $('._main .desktop .section02 .col').mouseover(function(){
 
-        $(this).find('video')[0].play();
+        if(!$(this).find('video')[0].hasAttribute('autoplay')){
+            $(this).find('video')[0].play();
+        }
 
         gsap.set($(this),{
             zIndex : 3
@@ -175,7 +206,10 @@ export default ()=>{
     });
 
     $('._main .desktop .section02 .col').mouseleave(function(){
-        $(this).find('video')[0].pause();
+
+        if(!$(this).find('video')[0].hasAttribute('autoplay')){
+            $(this).find('video')[0].pause();
+        }
 
         gsap.set($(this),{
             zIndex : 1
@@ -200,6 +234,7 @@ export default ()=>{
 
     });
 
+    // 마우스 포인터 따라오기
     $('._main .desktop .section02 .col').mousemove(function(e){
 
         const {clientX,clientY} = e;
@@ -219,6 +254,7 @@ export default ()=>{
 
     });
 
+    // 마우스 포인터 텍스트 변경
     $('._main .desktop .section02 .col').mouseover(function(e){
 
         $('.over-fix').html($(this).data('text'));
@@ -227,6 +263,35 @@ export default ()=>{
             opacity : 1
         });
 
+    });
+
+
+    // 밑에 도착했을때 페이드인 아웃
+
+    
+    gsap.timeline({
+        scrollTrigger : {
+            trigger : "._main .section02",
+            start : "top-=50% center",
+        }
+    })
+    .to('._main .desktop .fade-in',{
+        opacity : 1,
+        duration : 0.7
+    })
+    .to('._main .desktop .fade-in',{
+        opacity : 0,
+        duration : 0.8
+    })
+    
+
+    // 백그라운드 따라옴
+    ScrollTrigger.create({
+        trigger : "._main .background-image",
+        endTrigger : "._main",
+        start : "top top",
+        pin : true,
+        pinSpace : true
     });
 
 }

@@ -52,12 +52,16 @@
 
             <div class="desktop">
 
+                <div class="fade-in"></div>
+
                 <div class="background-image">
-                    <img class="img01" src="/asset/image/pc/1.jpg" alt="">
+                    <img class="img01 imgall" src="/asset/image/pc/1.jpg" alt="">
                     <img class="img02" src="/asset/image/pc/2.jpg" alt="">
-                    <img class="img03" src="/asset/image/pc/3.jpg" alt="">
-                    <img class="img04" src="/asset/image/pc/4.jpg" alt="">
-                    <img class="img05" src="/asset/image/pc/5.jpg" alt="">
+                    <img class="img03 imgall" src="/asset/image/pc/3.jpg" alt="">
+                    <img class="img04 imgall" src="/asset/image/pc/4.jpg" alt="">
+                    <img class="img05 imgall" src="/asset/image/pc/5.jpg" alt="">
+                    <img class="img06 imgall" src="/asset/image/pc/6.jpg" alt="">
+                    <img class="img07 imgall" src="/asset/image/pc/7.jpg" alt="">
                 </div>
 
                 <section class="section01">
@@ -70,7 +74,7 @@
                             <p>DCHRIS</p>
                             <div class="line">
                                 <div class="bar"></div>
-                                <div class="arr"><img src="/asset/image/main/green-arr.png" alt=""></div>
+                                <div class="arr"><img src="/asset/image/main/green-arr.svg" alt=""></div>
                             </div>
                         </div>
                     </a>
@@ -111,7 +115,7 @@
                     <div class="col left-top" data-text="디블랙 아카데미">
                         <p>D-BLACK ACADEMY</p>
                         <div class="video">
-                            <video src="/asset/video/main/academy.mp4" muted loop playsinline></video>
+                            <video src="/asset/video/main/academy.mp4" autoplay muted loop playsinline></video>
                         </div>
                     </div>
 
@@ -122,21 +126,21 @@
                         </div>
                     </div>
 
-                    <div class="col left" data-text="디엑스 블랙">
+                    <div class="col left-bottom" data-text="디엑스 블랙">
                         <p>DX BLACK</p>
                         <div class="video">
-                        <video src="/asset/video/main/DXBLACK.mp4" muted loop playsinline></video>
+                        <video src="/asset/video/main/DXBLACK.mp4" autoplay muted loop playsinline></video>
                         </div>
                     </div>
 
-                    <div class="col left" data-text="디버전스">
+                    <div class="col left-bottom" data-text="디버전스">
                         <p>D-VERGENCE</p>
                         <div class="video">
                         <video src="/asset/video/academy.mp4" muted loop playsinline></video>
                         </div>
                     </div>
 
-                    <div class="col right" data-text="디블랙 프로젝트">
+                    <div class="col right-top" data-text="디블랙 프로젝트">
                         <p>D-BLACK PROJECT</p>
                         <div class="video">
                         <video src="/asset/video/main/PROJECT.mp4" muted loop playsinline></video>
@@ -150,10 +154,10 @@
                         </div>
                     </div>
 
-                    <div class="col right" data-text="디스타">
+                    <div class="col right-bottom" data-text="디스타">
                         <p>D-STAR</p>
                         <div class="video">
-                        <video src="/asset/video/main/D-STAR.mp4" muted loop playsinline></video>
+                        <video src="/asset/video/main/D-STAR.mp4" autoplay muted loop playsinline></video>
                         </div>
                     </div>
 
@@ -271,158 +275,7 @@
 
 <script type="module" src="/js/kjy/main/main.js"></script>
 
+
 <?php 
     include_once $_SERVER["DOCUMENT_ROOT"]."/_end.php"
 ?>
-
-
-<!-- <div class="overflow">
-                    <div class="circle-slide">
-                        <div class="slidebox">
-                            <div class="slide center">
-                                <div class="imgbox">
-                                    <div class="img">
-                                        <img src="/asset/image/main/dchris.jpg" alt="">
-                                    </div>
-                                    <div class="flex">
-                                        <button class="prev"><i class="xi-angle-left-min"></i></button>
-                                        <p>Dblack Project</p>
-                                        <button class="next"><i class="xi-angle-right-min"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="imgbox">
-                                    <div class="img">
-                                        <img src="/asset/image/main/dchris.jpg" alt="">
-                                    </div>
-                                    <div class="flex">
-                                        <button class="prev"><i class="xi-angle-left-min"></i></button>
-                                        <p>Dblack Project</p>
-                                        <button class="next"><i class="xi-angle-right-min"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="imgbox">
-                                    <div class="img">
-                                        <img src="/asset/image/main/dchris.jpg" alt="">
-                                    </div>
-                                    <div class="flex">
-                                        <button class="prev"><i class="xi-angle-left-min"></i></button>
-                                        <p>Dblack Project</p>
-                                        <button class="next"><i class="xi-angle-right-min"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="imgbox">
-                                    <div class="img">
-                                        <img src="/asset/image/main/dchris.jpg" alt="">
-                                    </div>
-                                    <div class="flex">
-                                        <button class="prev"><i class="xi-angle-left-min"></i></button>
-                                        <p>Dblack Project</p>
-                                        <button class="next"><i class="xi-angle-right-min"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="imgbox">
-                                    <div class="img">
-                                        <img src="/asset/image/main/dchris.jpg" alt="">
-                                    </div>
-                                    <div class="flex">
-                                        <button class="prev"><i class="xi-angle-left-min"></i></button>
-                                        <p>Dblack Project</p>
-                                        <button class="next"><i class="xi-angle-right-min"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="imgbox">
-                                    <div class="img">
-                                        <img src="/asset/image/main/dchris.jpg" alt="">
-                                    </div>
-                                    <div class="flex">
-                                        <button class="prev"><i class="xi-angle-left-min"></i></button>
-                                        <p>Dblack Project</p>
-                                        <button class="next"><i class="xi-angle-right-min"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="imgbox">
-                                    <div class="img">
-                                        <img src="/asset/image/main/dchris.jpg" alt="">
-                                    </div>
-                                    <div class="flex">
-                                        <button class="prev"><i class="xi-angle-left-min"></i></button>
-                                        <p>Dblack Project</p>
-                                        <button class="next"><i class="xi-angle-right-min"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="imgbox">
-                                    <div class="img">
-                                        <img src="/asset/image/main/dchris.jpg" alt="">
-                                    </div>
-                                    <div class="flex">
-                                        <button class="prev"><i class="xi-angle-left-min"></i></button>
-                                        <p>Dblack Project</p>
-                                        <button class="next"><i class="xi-angle-right-min"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="imgbox">
-                                    <div class="img">
-                                        <img src="/asset/image/main/dchris.jpg" alt="">
-                                    </div>
-                                    <div class="flex">
-                                        <button class="prev"><i class="xi-angle-left-min"></i></button>
-                                        <p>Dblack Project</p>
-                                        <button class="next"><i class="xi-angle-right-min"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="imgbox">
-                                    <div class="img">
-                                        <img src="/asset/image/main/dchris.jpg" alt="">
-                                    </div>
-                                    <div class="flex">
-                                        <button class="prev"><i class="xi-angle-left-min"></i></button>
-                                        <p>Dblack Project</p>
-                                        <button class="next"><i class="xi-angle-right-min"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="imgbox">
-                                    <div class="img">
-                                        <img src="/asset/image/main/dchris.jpg" alt="">
-                                    </div>
-                                    <div class="flex">
-                                        <button class="prev"><i class="xi-angle-left-min"></i></button>
-                                        <p>Dblack Project</p>
-                                        <button class="next"><i class="xi-angle-right-min"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="imgbox">
-                                    <div class="img">
-                                        <img src="/asset/image/main/dchris.jpg" alt="">
-                                    </div>
-                                    <div class="flex">
-                                        <button class="prev"><i class="xi-angle-left-min"></i></button>
-                                        <p>Dblack Project</p>
-                                        <button class="next"><i class="xi-angle-right-min"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->

@@ -14,7 +14,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/scroll.css">
-    <link rel="stylesheet" href="/scss/kjy/kjy.css">
+    <link rel="stylesheet" href="/css/kjy.css">
 
     <!-- JS -->
     <link rel="stylesheet" href="/js/plugin/swiper11.1.1/swiper.css">
