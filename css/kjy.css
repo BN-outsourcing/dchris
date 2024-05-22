@@ -247,7 +247,7 @@
 }
 @media screen and (max-width: 480px) {
   .list-view {
-    padding-top: 76.31px;
+    padding-top: 61.3px;
   }
   .list-view .scroll {
     font-size: 14px;
@@ -255,10 +255,10 @@
     right: 5%;
   }
   .list-view .over .small {
-    font-size: 16px;
+    font-size: 14px;
   }
   .list-view .over .list li .tbx {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -595,6 +595,7 @@
   height: 100vh;
   position: relative;
   z-index: 3;
+  transform: translateY(100%);
 }
 ._main .desktop .section02 .col {
   position: absolute;
@@ -975,8 +976,8 @@
   font-size: 2.4390243902vw;
   letter-spacing: -0.045em;
   display: inline-block;
-  margin-top: 17.6829268293vw;
-  margin-right: 9.756097561vw;
+  margin-top: 12.1951219512vw;
+  margin-right: 7.3170731707vw;
 }
 ._main .mobile .scroll .bar {
   width: 3.25em;
@@ -1009,7 +1010,7 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  padding: 2.5714285714em 6.2195121951% 2.5714285714em 6.4634146341%;
+  padding: 1.7857142857em 6.2195121951% 1.7857142857em 6.4634146341%;
   box-sizing: border-box;
   gap: 0.71875em;
   display: flex;
@@ -1018,7 +1019,7 @@
   z-index: 5;
 }
 ._main .mobile .m_nav a {
-  height: 2.9059375em;
+  height: 2.5934375em;
   width: 100%;
   border: 1px solid #fff;
   display: flex;

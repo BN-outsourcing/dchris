@@ -301,8 +301,8 @@ export default ()=>{
     .to('._main .desktop .fade-in',{
         opacity : 0,
     },'b')
-    .from('._main .desktop .section02',{
-        yPercent : 100,
+    .to('._main .desktop .section02',{
+        y : 0,
     },'b');
 
 }
