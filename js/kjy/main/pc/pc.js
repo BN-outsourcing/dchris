@@ -1,48 +1,56 @@
 // 데스크탑
 export default ()=>{
 
-    gsap.registerPlugin(ScrollTrigger,ScrollSmoother);
-
-    ScrollSmoother.create({
-        smooth: 1,
-    });
+    gsap.registerPlugin(ScrollTrigger,ScrollSmoother,SplitText);
 
     gsap.timeline()
-    .fromTo("._main .desktop .section01 .im-box .bb img",{
+    .fromTo("._main .desktop .section01 .im-box .bb img:nth-of-type(1)",{
         scale : 1.3
     },{
         scale : 1,
         delay : 0.1,
         duration : 0.8,
-        onComplete : ()=>{
-            $('._main .desktop .section01 .im-box .bb').append('<img src="/asset/image/main/dchris.gif" alt="">');
-        }
+    },'a')
+    .to("._main .desktop .section01 .im-box .bb img:nth-of-type(2)",{
+        opacity : 1,
+        delay : 0.2
     })
     .from('._main .desktop .section01 .inline .fade .p',{
         y : 50,
         opacity : 0
+    },'a+=50%');
+
+    // 워딩
+
+    const split1 = new SplitText("._main .desktop .section01 .im-box .tbx", {type: "chars"});
+
+    gsap.timeline()
+    .from(split1.chars, {
+        duration: .005,
+        autoAlpha: 0,
+        stagger: {
+            each: .05,
+            onStart() {
+            /* let target = this.targets()[0];
+            console.log(target.offsetLeft + target.offsetWidth) */
+            }
+        }
     });
 
-    gsap.timeline({
-        scrollTrigger : {
-            trigger : "._main .desktop .section01",
-            pin : true,
-            end : "+=300%",
-            scrub : 1,
+    const split2 = new SplitText("._main .desktop .section01 .scroll-box p", {type: "chars"});
+
+    gsap.timeline()
+    .from(split2.chars, {
+        duration: .005,
+        autoAlpha: 0,
+        stagger: {
+            each: .05,
+            onStart() {
+            /* let target = this.targets()[0];
+            console.log(target.offsetLeft + target.offsetWidth) */
+            }
         }
-    })
-    .to('._main .desktop .section01 .inline .bt',{
-        y : "-100vh",
-    },'a')
-    .to('._main .desktop .section01 .inline .fade',{
-        y : "-100vh",
-    },'a+=50%')
-    .to('._main .desktop .section01 .im-box',{
-        y : "-100vh",
-    },'a+=50%')
-    .to('._main .desktop .section01 .scroll-box',{
-        y : "-100vh",
-    },'a+=50%');
+    });
     
 
     // 영상 크기 조절
@@ -265,33 +273,36 @@ export default ()=>{
 
     });
 
-
-    // 밑에 도착했을때 페이드인 아웃
-
-    
     gsap.timeline({
         scrollTrigger : {
-            trigger : "._main .section02",
-            start : "top-=50% center",
+            trigger : "._main .desktop .section01",
+            start : "top top",
+            pin : true,
+            end : "+=300%",
+            // markers : true,
+            scrub : 1,
         }
     })
+    .to('._main .desktop .section01 .inline .bt',{
+        y : "-100vh",
+    },'a')
+    .to('._main .desktop .section01 .inline .fade',{
+        y : "-100vh",
+    },'a+=50%')
+    .to('._main .desktop .section01 .im-box',{
+        y : "-100vh",
+    },'a+=50%')
+    .to('._main .desktop .section01 .scroll-box',{
+        y : "-100vh",
+    },'a+=50%')
     .to('._main .desktop .fade-in',{
         opacity : 1,
-        duration : 0.7
-    })
+    },"a+=90%")
     .to('._main .desktop .fade-in',{
         opacity : 0,
-        duration : 0.8
-    })
-    
-
-    // 백그라운드 따라옴
-    ScrollTrigger.create({
-        trigger : "._main .background-image",
-        endTrigger : "._main",
-        start : "top top",
-        pin : true,
-        pinSpace : true
-    });
+    },'b')
+    .from('._main .desktop .section02',{
+        yPercent : 100,
+    },'b');
 
 }

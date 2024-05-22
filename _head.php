@@ -23,6 +23,7 @@
     <script src="/js/plugin/gsap3.12.2/ScrollTrigger.min.js"></script>
     <script src="/js/plugin/gsap3.12.2/ScrollSmoother.min.js"></script>
     <script src="/js/plugin/gsap3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="/js/plugin/gsap3.12.2/SplitText.min.js"></script>
     <script src="/js/plugin/jquery.js"></script>
     
 

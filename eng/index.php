@@ -52,25 +52,30 @@
 
             <div class="desktop">
 
-                <div class="background-image">
-                    <img class="img01" src="/asset/image/pc/1.jpg" alt="">
-                    <img class="img02" src="/asset/image/pc/2.jpg" alt="">
-                    <img class="img03" src="/asset/image/pc/3.jpg" alt="">
-                    <img class="img04" src="/asset/image/pc/4.jpg" alt="">
-                    <img class="img05" src="/asset/image/pc/5.jpg" alt="">
-                </div>
+                <div class="fade-in"></div>
 
                 <section class="section01">
+
+                    <div class="background-image">
+                        <img class="img01 imgall" src="/asset/image/pc/1.jpg" alt="">
+                        <img class="img02" src="/asset/image/pc/2.jpg" alt="">
+                        <img class="img03 imgall" src="/asset/image/pc/3.jpg" alt="">
+                        <img class="img04 imgall" src="/asset/image/pc/4.jpg" alt="">
+                        <img class="img05 imgall" src="/asset/image/pc/5.jpg" alt="">
+                        <img class="img06 imgall" src="/asset/image/pc/6.jpg" alt="">
+                        <img class="img07 imgall" src="/asset/image/pc/7.jpg" alt="">
+                    </div>
 
                     <a href="/" class="im-box">
                         <div class="bb">
                             <img src="/asset/image/main/dchris.jpg" alt="">
+                            <img src="/asset/image/main/dchris.gif" alt="">
                         </div>
                         <div class="tbx">
                             <p>DCHRIS</p>
                             <div class="line">
                                 <div class="bar"></div>
-                                <div class="arr"><img src="/asset/image/main/green-arr.png" alt=""></div>
+                                <div class="arr"></div>
                             </div>
                         </div>
                     </a>
@@ -83,10 +88,7 @@
                     </div>
 
                     <div class="inline">
-                        <h2 class="bt">
-                            DCHRIS
-                        </h2>
-
+                        <h2 class="bt">DCHRIS</h2>
                         <div class="fade">
                             <div class="p">
                                 <p>
@@ -104,60 +106,61 @@
                         </div>
                     </div>
 
+                    <section class="section02">
+
+                        <div class="col left-top" data-text="D-BLACK ACADEMY">
+                            <p>D-BLACK ACADEMY</p>
+                            <div class="video">
+                                <video src="/asset/video/main/academy.mp4" autoplay muted loop playsinline></video>
+                            </div>
+                        </div>
+    
+                        <div class="col left" data-text="DCHRIS">
+                            <p>DCHRIS</p>
+                            <div class="video">
+                            <video src="/asset/video/main/DCHRIS.mp4" muted loop playsinline></video>
+                            </div>
+                        </div>
+    
+                        <div class="col left-bottom" data-text="DX BLACK">
+                            <p>DX BLACK</p>
+                            <div class="video">
+                            <video src="/asset/video/main/DXBLACK.mp4" autoplay muted loop playsinline></video>
+                            </div>
+                        </div>
+    
+                        <div class="col left-bottom" data-text="D-VERGENCE">
+                            <p>D-VERGENCE</p>
+                            <div class="video">
+                            <video src="/asset/video/academy.mp4" muted loop playsinline></video>
+                            </div>
+                        </div>
+    
+                        <div class="col right-top" data-text="D-BLACK PROJECT">
+                            <p>D-BLACK PROJECT</p>
+                            <div class="video">
+                            <video src="/asset/video/main/PROJECT.mp4" muted loop playsinline></video>
+                            </div>
+                        </div>
+    
+                        <div class="col right" data-text="D-SCALP CARE">
+                            <p>D-SCALP CARE</p>
+                            <div class="video">
+                            <video src="/asset/video/academy.mp4" muted loop playsinline></video>
+                            </div>
+                        </div>
+    
+                        <div class="col right-bottom" data-text="D-STAR">
+                            <p>D-STAR</p>
+                            <div class="video">
+                            <video src="/asset/video/main/D-STAR.mp4" autoplay muted loop playsinline></video>
+                            </div>
+                        </div>
+    
+                    </section>
+
                 </section>
 
-                <section class="section02">
-
-                    <div class="col left-top" data-text="D-BLACK ACADEMY">
-                        <p>D-BLACK ACADEMY</p>
-                        <div class="video">
-                            <video src="/asset/video/main/academy.mp4" muted loop playsinline></video>
-                        </div>
-                    </div>
-
-                    <div class="col left" data-text="DCHRIS">
-                        <p>DCHRIS</p>
-                        <div class="video">
-                        <video src="/asset/video/main/DCHRIS.mp4" muted loop playsinline></video>
-                        </div>
-                    </div>
-
-                    <div class="col left" data-text="DX BLACK">
-                        <p>DX BLACK</p>
-                        <div class="video">
-                        <video src="/asset/video/main/DXBLACK.mp4" muted loop playsinline></video>
-                        </div>
-                    </div>
-
-                    <div class="col left" data-text="D-VERGENCE">
-                        <p>D-VERGENCE</p>
-                        <div class="video">
-                        <video src="/asset/video/academy.mp4" muted loop playsinline></video>
-                        </div>
-                    </div>
-
-                    <div class="col right" data-text="D-BLACK PROJECT">
-                        <p>D-BLACK PROJECT</p>
-                        <div class="video">
-                        <video src="/asset/video/main/PROJECT.mp4" muted loop playsinline></video>
-                        </div>
-                    </div>
-
-                    <div class="col right" data-text="D-SCALP CARE">
-                        <p>D-SCALP CARE</p>
-                        <div class="video">
-                        <video src="/asset/video/academy.mp4" muted loop playsinline></video>
-                        </div>
-                    </div>
-
-                    <div class="col right" data-text="D-STAR">
-                        <p>D-STAR</p>
-                        <div class="video">
-                        <video src="/asset/video/main/D-STAR.mp4" muted loop playsinline></video>
-                        </div>
-                    </div>
-
-                </section>
             </div>
 
             <div class="mobile">
@@ -168,92 +171,99 @@
                     <img class="right" src="/asset/image/mob/mob3.jpg" alt="">
                 </div>
 
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="imgbox">
-                                <div class="img">
-                                    <video src="/asset/video/main/PROJECT.mp4" muted loop autoplay playsinline></video>
+                <div class="swiper-box">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="imgbox">
+                                    <div class="img">
+                                        <video src="/asset/video/main/PROJECT.mp4" muted loop autoplay playsinline></video>
+                                    </div>
+                                    <div class="flex">
+                                        <div></div>
+                                        <p>D-BLACK PROJECT</p>
+                                        <div></div>
+                                    </div>
                                 </div>
-                                <div class="flex">
-                                    <button class="prev"><i class="xi-angle-left-min"></i></button>
-                                    <p>D-BLACK PROJECT</p>
-                                    <button class="next"><i class="xi-angle-right-min"></i></button>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="imgbox">
+                                    <div class="img">
+                                        <video src="/asset/video/main/academy.mp4" muted loop autoplay playsinline></video>
+                                    </div>
+                                    <div class="flex">
+                                        <div></div>
+                                        <p>D-BLACK ACADEMY</p>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="imgbox">
+                                    <div class="img">
+                                        <video src="/asset/video/main/DCHRIS.mp4" muted loop autoplay playsinline></video>
+                                    </div>
+                                    <div class="flex">
+                                        <div></div>
+                                        <p>DCHRIS</p>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="imgbox">
+                                    <div class="img">
+                                        <video src="/asset/video/main/DXBLACK.mp4" muted loop autoplay playsinline></video>
+                                    </div>
+                                    <div class="flex">
+                                        <div></div>
+                                        <p>DX BLACK</p>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="imgbox">
+                                    <div class="img">
+                                        <video src="/asset/video/main/academy.mp4" muted loop autoplay playsinline></video>
+                                    </div>
+                                    <div class="flex">
+                                        <div></div>
+                                        <p>D-VERGENCE</p>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="imgbox">
+                                    <div class="img">
+                                        <video src="/asset/video/main/academy.mp4" muted loop autoplay playsinline></video>
+                                    </div>
+                                    <div class="flex">
+                                        <div></div>
+                                        <p>D-SCALP CARE</p>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="imgbox">
+                                    <div class="img">
+                                        <video src="/asset/video/main/D-STAR.mp4" muted loop autoplay playsinline></video>
+                                    </div>
+                                    <div class="flex">
+                                        <div></div>
+                                        <p>D-STAR</p>
+                                        <div></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="imgbox">
-                                <div class="img">
-                                    <video src="/asset/video/main/academy.mp4" muted loop autoplay playsinline></video>
-                                </div>
-                                <div class="flex">
-                                    <button class="prev"><i class="xi-angle-left-min"></i></button>
-                                    <p>D-BLACK ACADEMY</p>
-                                    <button class="next"><i class="xi-angle-right-min"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="imgbox">
-                                <div class="img">
-                                    <video src="/asset/video/main/DCHRIS.mp4" muted loop autoplay playsinline></video>
-                                </div>
-                                <div class="flex">
-                                    <button class="prev"><i class="xi-angle-left-min"></i></button>
-                                    <p>DCHRIS</p>
-                                    <button class="next"><i class="xi-angle-right-min"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="imgbox">
-                                <div class="img">
-                                    <video src="/asset/video/main/DXBLACK.mp4" muted loop autoplay playsinline></video>
-                                </div>
-                                <div class="flex">
-                                    <button class="prev"><i class="xi-angle-left-min"></i></button>
-                                    <p>DX BLACK</p>
-                                    <button class="next"><i class="xi-angle-right-min"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="imgbox">
-                                <div class="img">
-                                    <video src="/asset/video/main/academy.mp4" muted loop autoplay playsinline></video>
-                                </div>
-                                <div class="flex">
-                                    <button class="prev"><i class="xi-angle-left-min"></i></button>
-                                    <p>D-VERGENCE</p>
-                                    <button class="next"><i class="xi-angle-right-min"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="imgbox">
-                                <div class="img">
-                                    <video src="/asset/video/main/academy.mp4" muted loop autoplay playsinline></video>
-                                </div>
-                                <div class="flex">
-                                    <button class="prev"><i class="xi-angle-left-min"></i></button>
-                                    <p>D-SCALP CARE</p>
-                                    <button class="next"><i class="xi-angle-right-min"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="imgbox">
-                                <div class="img">
-                                    <video src="/asset/video/main/D-STAR.mp4" muted loop autoplay playsinline></video>
-                                </div>
-                                <div class="flex">
-                                    <button class="prev"><i class="xi-angle-left-min"></i></button>
-                                    <p>D-STAR</p>
-                                    <button class="next"><i class="xi-angle-right-min"></i></button>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+
+                    <div class="scroll">
+                        <div class="bar"><div class="cir"></div></div>
+                        <p>Scroll</p>
                     </div>
                 </div>
 
@@ -270,6 +280,13 @@
 
 
 <script type="module" src="/js/kjy/main/main.js"></script>
+
+<script>
+
+    
+
+</script>
+
 
 <?php 
     include_once $_SERVER["DOCUMENT_ROOT"]."/_end.php"

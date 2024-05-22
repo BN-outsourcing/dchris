@@ -402,7 +402,7 @@
   left: 0;
   height: 100vh;
   width: 100%;
-  z-index: 2;
+  z-index: -1;
 }
 ._main .desktop .background-image img {
   position: absolute;
@@ -459,6 +459,10 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+._main .desktop .section01 .im-box .bb img:nth-of-type(2) {
+  z-index: 1;
+  opacity: 0;
+}
 ._main .desktop .section01 .im-box .tbx {
   display: flex;
   align-items: center;
@@ -471,8 +475,6 @@
   font-weight: 400;
 }
 ._main .desktop .section01 .im-box .tbx .line {
-  height: 1px;
-  background: #00ff42;
   margin-left: 13px;
   position: relative;
 }
@@ -480,6 +482,9 @@
   width: 20px;
   height: 100%;
   transition: width 0.4s;
+  height: 2px;
+  position: relative;
+  background: #00ff42;
 }
 ._main .desktop .section01 .im-box .tbx .line .arr {
   position: absolute;
@@ -489,10 +494,7 @@
   width: 8px;
   height: 15px;
   z-index: 2;
-}
-._main .desktop .section01 .im-box .tbx .line .arr img {
-  width: 100%;
-  height: 100%;
+  background: url("/asset/image/main/green-arr.svg") no-repeat center/cover;
 }
 ._main .desktop .section01 .im-box:hover .tbx .line .bar {
   width: 71px;
@@ -544,6 +546,8 @@
   bottom: 0;
   transform: translateX(-50%);
   position: absolute;
+  z-index: 2;
+  mix-blend-mode: exclusion;
 }
 ._main .desktop .section01 .inline .bt {
   font-family: "Perpetua Titling MT";
@@ -551,7 +555,6 @@
   font-weight: bold;
   font-size: 19.4354166667vw;
   letter-spacing: -0.025em;
-  mix-blend-mode: difference;
 }
 ._main .desktop .section01 .inline .fade {
   text-align: left;
@@ -853,15 +856,21 @@
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 2;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
-._main .mobile .swiper {
+._main .mobile .swiper-box {
   position: absolute;
   top: 98px;
   left: 50%;
   transform: translateX(-50%);
-  width: 110%;
-  overflow: visible;
+  width: 100%;
   z-index: 4;
+  text-align: right;
+}
+._main .mobile .swiper {
+  overflow: visible;
+  min-width: 0;
 }
 ._main .mobile .swiper .swiper-slide {
   overflow: visible;
@@ -934,23 +943,61 @@
   transform: scale(0.7);
   pointer-events: none;
   z-index: 10;
+  /* button {
+      all: unset;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      font-size: 1.4em;
+      pointer-events: all;
+      i {
+          vertical-align: middle;
+      }
+  } */
 }
-._main .mobile .imgbox .flex button {
-  all: unset;
-  cursor: pointer;
-  opacity: 0;
-  visibility: hidden;
-  font-size: 1.4em;
-  pointer-events: all;
-}
-._main .mobile .imgbox .flex button i {
-  vertical-align: middle;
+._main .mobile .imgbox .flex div {
+  width: 0.2857142857em;
+  height: 0.2857142857em;
+  border-radius: 1000px;
+  background: #fff;
+  flex: 0 0 auto;
 }
 ._main .mobile .imgbox .flex p {
   font-family: "Outfit";
   text-transform: uppercase;
   font-weight: 600;
   opacity: 0.29;
+}
+._main .mobile .scroll {
+  text-align: center;
+  color: #18ff00;
+  font-family: "Outfit";
+  font-size: 2.4390243902vw;
+  letter-spacing: -0.045em;
+  display: inline-block;
+  margin-top: 17.6829268293vw;
+  margin-right: 9.756097561vw;
+}
+._main .mobile .scroll .bar {
+  width: 3.25em;
+  height: 1.5495em;
+  border: 1px solid #18ff00;
+  border-radius: 1000px;
+  position: relative;
+}
+._main .mobile .scroll .bar .cir {
+  width: 0.3em;
+  height: 0.3em;
+  border-radius: 1000px;
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #18ff00;
+}
+._main .mobile .scroll p {
+  margin-top: 0.85em;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 480px) {
   ._main .mobile .imgbox .img {

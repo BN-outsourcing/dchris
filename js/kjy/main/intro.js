@@ -2,7 +2,7 @@
 
 import { useIsMobile } from "../common/responsive.js";
 
-gsap.registerPlugin(ScrollTrigger,ScrollSmoother);
+gsap.registerPlugin(ScrollTrigger,ScrollSmoother,SplitText);
     
 if(!useIsMobile()){
     ScrollSmoother.create({
@@ -20,10 +20,21 @@ gsap.timeline()
     y : 50,
     opacity : 0,
     duration : 0.6,
-},'a+=50%')
+},'a+=50%');
 
-gsap.from('.lang p',{
-    y : 50,
-    opacity : 0,
-    duration : 0.6,
+
+
+const split = new SplitText(".lang p", {type: "chars"});
+
+gsap.timeline()
+  .from(split.chars, {
+  duration: .01,
+  autoAlpha: 0,
+  stagger: {
+    each: .05,
+    onStart() {
+      /* let target = this.targets()[0];
+      console.log(target.offsetLeft + target.offsetWidth) */
+    }
+  }
 });
