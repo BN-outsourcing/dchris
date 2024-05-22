@@ -26,7 +26,9 @@ gsap.timeline()
 
 const split = new SplitText(".lang p", {type: "chars"});
 
-gsap.timeline()
+gsap.timeline({
+  delay : 0.5,
+})
   .from(split.chars, {
   duration: .01,
   autoAlpha: 0,

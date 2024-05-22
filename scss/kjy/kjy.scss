@@ -299,7 +299,7 @@
 
     @media screen and (max-width : 480px) {
 
-        padding-top: 61.3px;
+        padding-top: 76.31px;
 
         .scroll { 
             font-size: 14px;
@@ -309,13 +309,13 @@
         
         .over {
             .small {
-                font-size: 14px;
+                font-size: 16px;
             }
 
             .list {
                 li {
                     .tbx {
-                        font-size: 14px;
+                        font-size: 16px;
                     }
                 }
             }
@@ -729,7 +729,6 @@
             height: 100vh;
             position: relative;
             z-index: 3;
-            transform: translateY(100%);
     
             .col {
                 position: absolute;
@@ -1026,8 +1025,8 @@
                 } */
 
                 div {
-                    width: 8/28*1em;
-                    height: 8/28*1em;
+                    width: calc(8/28*1em);
+                    height: calc(8/28*1em);
                     border-radius: 1000px;
                     background: #fff;
                     flex: 0 0 auto;
@@ -1051,21 +1050,21 @@
             font-size: calc(20*100/820*1vw);
             letter-spacing: -0.045em;
             display: inline-block;
-            margin-top: calc(100*100/820*1vw);
-            margin-right: calc(60*100/820*1vw);
+            margin-top: calc(145*100/820*1vw);
+            margin-right: calc(80*100/820*1vw);
             .bar {
-                width: 65/20*1em;
-                height: 30.99/20*1em;
+                width: calc(65/20*1em);
+                height: calc(30.99/20*1em);
                 border: 1px solid #18ff00;
                 border-radius: 1000px;
                 position: relative;
 
                 .cir {
-                    width: 6/20*1em;
-                    height: 6/20*1em;
+                    width: calc(6/20*1em);
+                    height: calc(6/20*1em);
                     border-radius: 1000px;
                     position: absolute;
-                    right: 13/65*100%;
+                    right: calc(13/65*100%);
                     top: 50%;
                     transform: translateY(-50%);
                     background: #18ff00;
@@ -1074,7 +1073,7 @@
             }
 
             p {
-                margin-top: 17/20*1em;
+                margin-top: calc(17/20*1em);
                 text-transform: uppercase;
             }
 
@@ -1099,7 +1098,7 @@
             left: 0;
             bottom: 0;
             width: 100%;
-            padding: calc(50/28*1em) calc(51/820*100%) calc(50/28*1em) calc(53/820*100%);
+            padding: calc(42/28*1em) calc(51/820*100%) calc(42/28*1em) calc(53/820*100%);
             box-sizing: border-box;
             gap: calc(23/32*1em);
             display: flex;
@@ -1109,7 +1108,7 @@
             z-index: 5;
 
             a {
-                height: calc(82.99/32*1em);
+                height: calc(92.99/32*1em);
                 width: 100%;
                 border: 1px solid #fff;
                 display: flex;
@@ -1150,124 +1149,6 @@
             }
             
         }
-
-
-        /* 
-        
-            .overflow {
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            overflow: hidden;
-            z-index: 3;
-        }
-
-        .circle-slide {
-
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 1329px;
-
-            .slidebox {
-                width: 100%;
-                // border: 4px solid #fff;
-                border-radius: 10000%;
-                position: relative;
-                color: #fff;
-                &::after {
-                    content: '';
-                    display: block;
-                    padding-bottom: 100%;
-                }
-
-                .slide {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    // border: 1px solid #acf;
-                    border-radius: 10000%;
-                    pointer-events: none;
-
-                    &.center {
-
-                        .imgbox {
-                            opacity: 1;
-                            width: 22.5%;
-                            .img {
-                                &::before {
-                                    opacity: 0;
-                                }
-                            }
-                        }
-                        
-                        .flex {
-                            pointer-events: all;
-                            font-size: 32px;
-                            button {
-                                opacity: 1;
-                                visibility: visible;
-                            }
-                            p {
-                               opacity: 1;
-                            }
-                        }
-                        
-                    }
-
-                }
-
-            }
-
-
-            @media screen and (max-width : 480px) {
-                
-                width: 950px;
-
-                .imgbox {
-                    .img {
-                        border-radius: 16px;
-                    }
-                    .flex {
-                        font-size: 16px;
-                    }
-                }
-
-                // .slidebox .slide{
-
-                //     .imgbox {
-                //         width: 17.5%;
-                //         .img {
-                //             border-radius: 16px;
-                //         }
-                //         .flex {
-                //             font-size: 16px;
-                //         }
-                //     }
-
-                //     &.center {
-                //         .imgbox {
-                //             width: 20%;
-                //         }
-                //         .flex {
-                //             font-size: 20px;
-                //             button {
-                //                 font-size: 20px;
-                //             }
-                //             gap: 10px;
-                //         }
-                //     }
-
-                // }
-
-            }
-
-        }
-
-        */
         
     }
 

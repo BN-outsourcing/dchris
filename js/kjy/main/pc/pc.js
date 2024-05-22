@@ -24,7 +24,9 @@ export default ()=>{
 
     const split1 = new SplitText("._main .desktop .section01 .im-box .tbx", {type: "chars"});
 
-    gsap.timeline()
+    gsap.timeline({
+        delay : 0.5,
+    })
     .from(split1.chars, {
         duration: .005,
         autoAlpha: 0,
@@ -39,7 +41,9 @@ export default ()=>{
 
     const split2 = new SplitText("._main .desktop .section01 .scroll-box p", {type: "chars"});
 
-    gsap.timeline()
+    gsap.timeline({
+        delay : 0.5,
+    })
     .from(split2.chars, {
         duration: .005,
         autoAlpha: 0,
@@ -301,8 +305,8 @@ export default ()=>{
     .to('._main .desktop .fade-in',{
         opacity : 0,
     },'b')
-    .to('._main .desktop .section02',{
-        y : 0,
+    .from('._main .desktop .section02',{
+        yPercent : 100,
     },'b');
 
 }

@@ -105,8 +105,6 @@ export default ()=>{
 
             const max = ( window.innerHeight - $('._main .mobile .m_nav').outerHeight());
 
-            console.log(window.innerHeight - $('._main .mobile .m_nav').outerHeight());
-
             $('.list-view .over').css({
                 "max-height" : max - $('._header').outerHeight()
             });
