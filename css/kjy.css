@@ -659,7 +659,7 @@
   top: 39.5918367347%;
 }
 ._main .desktop .section02 .col:nth-of-type(7) {
-  right: 23.4375%;
+  left: 67.7083333333%;
   top: 67.3469387755%;
 }
 @media screen and (max-width: 1280px) {
@@ -698,6 +698,7 @@
   }
   ._main .desktop .section02 .col:nth-of-type(7) {
     right: 24%;
+    left: 68%;
     top: 77%;
   }
 }

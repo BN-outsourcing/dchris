@@ -809,7 +809,7 @@
                 }
     
                 &:nth-of-type(7) {
-                    right: calc(450/1920*100%);
+                    left: calc(1300/1920*100%);
                     top: calc(660/980*100%);
                 }
     
@@ -855,7 +855,7 @@
                         top: 50%;
                     }
                     &:nth-of-type(7) {
-                        right: 24%;
+                        left: 68%;
                         top: 77%;
                     }
                 }
