@@ -64,6 +64,7 @@
                         <img class="img05 imgall" src="/asset/image/pc/5.jpg" alt="">
                         <img class="img06 imgall" src="/asset/image/pc/6.jpg" alt="">
                         <img class="img07 imgall" src="/asset/image/pc/7.jpg" alt="">
+                        <img class="img08 imgall" src="/asset/image/pc/8.jpg" alt="">
                     </div>
 
                     <a href="/" class="im-box">
@@ -129,7 +130,7 @@
                             </div>
                         </div>
     
-                        <div class="col left-bottom" data-text="디버전스">
+                        <div class="col bottom" data-text="디버전스">
                             <p>D-VERGENCE</p>
                             <div class="video">
                             <video src="/asset/video/academy.mp4" muted loop playsinline></video>
@@ -280,13 +281,6 @@
 
 
 <script type="module" src="/js/kjy/main/main.js"></script>
-
-<script>
-
-    
-
-</script>
-
 
 <?php 
     include_once $_SERVER["DOCUMENT_ROOT"]."/_end.php"

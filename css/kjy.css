@@ -600,6 +600,9 @@
   position: absolute;
   cursor: none;
 }
+._main .desktop .section02 .col:hover .video {
+  border-color: #18ff00;
+}
 ._main .desktop .section02 .col p {
   text-align: left;
   font-size: 20px;
@@ -619,6 +622,8 @@
   margin-top: 12px;
   position: relative;
   overflow: hidden;
+  border: 3px solid transparent;
+  transition: 0.4s border;
 }
 ._main .desktop .section02 .col .video iframe, ._main .desktop .section02 .col .video video {
   position: absolute;

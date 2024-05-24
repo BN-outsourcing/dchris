@@ -141,6 +141,18 @@ export default ()=>{
 
         }
 
+        if($(this).hasClass('bottom')){
+
+            gsap.to('.img08',{
+                opacity : 1
+            });
+
+            gsap.to('.imgall:not(.img08)',{
+                opacity : 0
+            });
+
+        }
+
         if($(this).hasClass('right')){
 
             gsap.to('.img05',{
